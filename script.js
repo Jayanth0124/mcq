@@ -110,19 +110,19 @@ class MCQApp {
             </div>
             <ul class="options-list">
                 <li class="option-item" data-option-index="0">
-                    <span class="option-label">A.</span>
+                    <span class="option-label">A</span>
                     <span class="option-text">${question.options[0]}</span>
                 </li>
                 <li class="option-item" data-option-index="1">
-                    <span class="option-label">B.</span>
+                    <span class="option-label">B</span>
                     <span class="option-text">${question.options[1]}</span>
                 </li>
                 <li class="option-item" data-option-index="2">
-                    <span class="option-label">C.</span>
+                    <span class="option-label">C</span>
                     <span class="option-text">${question.options[2]}</span>
                 </li>
                 <li class="option-item" data-option-index="3">
-                    <span class="option-label">D.</span>
+                    <span class="option-label">D</span>
                     <span class="option-text">${question.options[3]}</span>
                 </li>
             </ul>
