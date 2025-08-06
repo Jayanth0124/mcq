@@ -1,0 +1,3012 @@
+{
+    "CO1": [
+        {
+            "qno": 1,
+            "question": "A logistic regression model has parameters 1.5 and -2.3. If the input feature vector is 2 and -1, compute the output probability using the sigmoid function.",
+            "options": [
+                "0.88",
+                "0.73",
+                "0.81",
+                "0.92"
+            ],
+            "answer": "0.88",
+            "co": "CO1"
+        },
+        {
+            "qno": 2,
+            "question": "A perceptron has weights 3 and -4 with bias 2. If the input is 1 and 2, compute the activation before applying the step function.",
+            "options": [
+                "-3",
+                "1",
+                "2",
+                "-2"
+            ],
+            "answer": "-3",
+            "co": "CO1"
+        },
+        {
+            "qno": 3,
+            "question": "The Hessian matrix of a function has eigenvalues 4 and 3. Determine if the function is convex.",
+            "options": [
+                "Convex",
+                "Not convex",
+                "Depends on input",
+                "Insufficient data"
+            ],
+            "answer": "Convex",
+            "co": "CO1"
+        },
+        {
+            "qno": 4,
+            "question": "The activation function is ReLU. Compute its derivative at -3 and 5.",
+            "options": [
+                "0,1",
+                "1,0",
+                "1,1",
+                "0,0"
+            ],
+            "answer": "0,1",
+            "co": "CO1"
+        },
+        {
+            "qno": 5,
+            "question": "A softmax function is applied to [3,1,0]. Compute the probability for the first class.",
+            "options": [
+                "0.84",
+                "0.71",
+                "0.75",
+                "0.64"
+            ],
+            "answer": "0.71",
+            "co": "CO1"
+        },
+        {
+            "qno": 6,
+            "question": "The loss function is squared error (y - y_pred)^2. Compute the gradient with respect to y_pred.",
+            "options": [
+                "y - y_pred",
+                "-2(y - y_pred)",
+                "2(y - y_pred)",
+                "y_pred - y"
+            ],
+            "answer": "-2(y - y_pred)",
+            "co": "CO1"
+        },
+        {
+            "qno": 7,
+            "question": "Compute the eigenvalues of the weight matrix [[2, -1], [-1, 2]].",
+            "options": [
+                "3,1",
+                "4,2",
+                "5,0",
+                "2,2"
+            ],
+            "answer": "3,1",
+            "co": "CO1"
+        },
+        {
+            "qno": 8,
+            "question": "A batch normalization layer has a mini-batch mean of 3 and variance of 4. Compute the normalized value for input 5 before scaling and shifting.",
+            "options": [
+                "0.5",
+                "1",
+                "2",
+                "-0.5"
+            ],
+            "answer": "1",
+            "co": "CO1"
+        },
+        {
+            "qno": 9,
+            "question": "A neural network has 1000 samples, input dimension 500, and a hidden layer with 200 neurons. Compute the number of trainable parameters excluding bias.",
+            "options": [
+                "100000",
+                "200000",
+                "50000",
+                "150000"
+            ],
+            "answer": "100000",
+            "co": "CO1"
+        },
+        {
+            "qno": 10,
+            "question": "The input matrix is [[1, 2], [3, 4]], and the weight matrix is [[0.5, -1], [2, 3]]. Compute the output before activation.",
+            "options": [
+                "[[4, 5], [6, 7]]",
+                "[[3, 5], [7, 9]]",
+                "[[4, 4], [10, 6]]",
+                "[[5, 2], [8, 9]]"
+            ],
+            "answer": "[[4, 4], [10, 6]]",
+            "co": "CO1"
+        },
+        {
+            "qno": 11,
+            "question": "The gradient descent update is theta = theta - alpha * gradient. If theta = 2, gradient = 3, and alpha = 0.01, compute the updated value of theta.",
+            "options": [
+                "1.97",
+                "2.03",
+                "1.93",
+                "2.07"
+            ],
+            "answer": "1.97",
+            "co": "CO1"
+        },
+        {
+            "qno": 12,
+            "question": "A neural network has two layers with weight matrices [[1, 2], [3, 4]] and [[-1, 0], [2, 1]]. Compute the number of multiplications required in a forward pass.",
+            "options": [
+                "4",
+                "6",
+                "8",
+                "10"
+            ],
+            "answer": "8",
+            "co": "CO1"
+        },
+        {
+            "qno": 13,
+            "question": "Xavier initialization is used for a layer with 128 input neurons and 64 output neurons. Compute the standard deviation of weight initialization.",
+            "options": [
+                "0.01",
+                "0.08",
+                "0.125",
+                "0.2"
+            ],
+            "answer": "0.125",
+            "co": "CO1"
+        },
+        {
+            "qno": 14,
+            "question": "Compute the derivative of tanh(x) at x = 0.5.",
+            "options": [
+                "0.3",
+                "0.5",
+                "0.75",
+                "0.8"
+            ],
+            "answer": "0.75",
+            "co": "CO1"
+        },
+        {
+            "qno": 15,
+            "question": "A dropout layer with probability 0.2 is used. If the input neuron has activation 0.8 before dropout, compute expected activation after dropout during training.",
+            "options": [
+                "1",
+                "0.64",
+                "0.8",
+                "0.96"
+            ],
+            "answer": "1",
+            "co": "CO1"
+        },
+        {
+            "qno": 16,
+            "question": "A CNN has a 3x3 filter applied to a 7x7 input with stride 2 and no padding. Compute the output dimension.",
+            "options": [
+                "3x3",
+                "4x4",
+                "5x5",
+                "6x6"
+            ],
+            "answer": "3x3",
+            "co": "CO1"
+        },
+        {
+            "qno": 17,
+            "question": "A pooling layer with a 2x2 filter and stride 2 is applied to a 6x6 feature map. Compute the output dimension.",
+            "options": [
+                "4x4",
+                "3x3",
+                "2x2",
+                "5x5"
+            ],
+            "answer": "3x3",
+            "co": "CO1"
+        },
+        {
+            "qno": 18,
+            "question": "A ResNet block has an input of 64x64x32 and undergoes two 3x3 convolutions. Compute the number of parameters (no bias).",
+            "options": [
+                "18432",
+                "36864",
+                "9216",
+                "4608"
+            ],
+            "answer": "18432",
+            "co": "CO1"
+        },
+        {
+            "qno": 19,
+            "question": "An RNN has a hidden state of 100 neurons and input of 50 neurons. Compute trainable parameters in the hidden state update (excluding biases).",
+            "options": [
+                "5000",
+                "10000",
+                "15000",
+                "20000"
+            ],
+            "answer": "15000",
+            "co": "CO1"
+        },
+        {
+            "qno": 20,
+            "question": "Compute the number of operations in a fully connected layer with 512 input neurons and 256 output neurons.",
+            "options": [
+                "131072",
+                "65536",
+                "262144",
+                "524288"
+            ],
+            "answer": "131072",
+            "co": "CO1"
+        },
+        {
+            "qno": 21,
+            "question": "An LSTM cell has input size 32 and hidden state size 64. Compute the number of trainable parameters (excluding biases).",
+            "options": [
+                "12288",
+                "8192",
+                "16384",
+                "24576"
+            ],
+            "answer": "12288",
+            "co": "CO1"
+        },
+        {
+            "qno": 22,
+            "question": "A GAN has a generator with an input noise vector of size 100 and a fully connected layer that outputs a 28x28 image. Compute trainable parameters in this layer.",
+            "options": [
+                "25000",
+                "78400",
+                "56000",
+                "39200"
+            ],
+            "answer": "78400",
+            "co": "CO1"
+        },
+        {
+            "qno": 23,
+            "question": "Compute the memory needed to store activations for a batch size of 128, input 256x256x3, using 32-bit floating point format.",
+            "options": [
+                "48 MB",
+                "24 MB",
+                "12 MB",
+                "96 MB"
+            ],
+            "answer": "24 MB",
+            "co": "CO1"
+        },
+        {
+            "qno": 24,
+            "question": "A ViT model divides a 224x224 image into 16x16 patches. Compute the number of patches.",
+            "options": [
+                "144",
+                "256",
+                "196",
+                "400"
+            ],
+            "answer": "196",
+            "co": "CO1"
+        },
+        {
+            "qno": 25,
+            "question": "A factory has 3 machines A, B, and C, which produce 25%, 35%, and 40% of the total products, respectively. The probabilities of these machines producing a defective item are 0.02, 0.03, and 0.05, respectively. If a randomly chosen product is found defective, what is the probability that it was produced by Machine A?",
+            "options": [
+                "5/(29)",
+                "6/(29)",
+                "7/(29)",
+                "8/(29)"
+            ],
+            "answer": "5/(29)",
+            "co": "CO1"
+        },
+        {
+            "qno": 26,
+            "question": "A neural network layer has 128 input neurons and 64 output neurons. How many trainable parameters (excluding bias) are in this layer?",
+            "options": [
+                "2048",
+                "8192",
+                "4096",
+                "16384"
+            ],
+            "answer": "8192",
+            "co": "CO1"
+        },
+        {
+            "qno": 27,
+            "question": "A dataset has 10000 samples, each with 256 features. How many weights does a single-layer perceptron need?",
+            "options": [
+                "256",
+                "10000",
+                "2560000",
+                "25600"
+            ],
+            "answer": "256",
+            "co": "CO1"
+        },
+        {
+            "qno": 28,
+            "question": "A ReLU activation function is used. What is the derivative at x = 0?",
+            "options": [
+                "1",
+                "0",
+                "Undefined",
+                "0.5"
+            ],
+            "answer": "Undefined",
+            "co": "CO1"
+        },
+        {
+            "qno": 29,
+            "question": "A neural network has a 28x28 grayscale image as input. How many neurons are in the input layer?",
+            "options": [
+                "28",
+                "784",
+                "1024",
+                "512"
+            ],
+            "answer": "784",
+            "co": "CO1"
+        },
+        {
+            "qno": 30,
+            "question": "A convolutional layer applies 16 filters of size 3x3 to a 32x32x3 image with stride 1 and no padding. Compute the output size.",
+            "options": [
+                "32x32x16",
+                "30x30x16",
+                "28x28x16",
+                "34x34x16"
+            ],
+            "answer": "30x30x16",
+            "co": "CO1"
+        },
+        {
+            "qno": 31,
+            "question": "A softmax function is applied to [2, 1, 0]. Compute the probability of the first class.",
+            "options": [
+                "0.44",
+                "0.57",
+                "0.49",
+                "0.65"
+            ],
+            "answer": "0.57",
+            "co": "CO1"
+        },
+        {
+            "qno": 32,
+            "question": "A neural network has 512 input neurons and a hidden layer with 128 neurons. Compute the number of connections (excluding bias).",
+            "options": [
+                "65536",
+                "8192",
+                "16384",
+                "32768"
+            ],
+            "answer": "65536",
+            "co": "CO1"
+        },
+        {
+            "qno": 33,
+            "question": "A 5x5 filter with stride 1 is applied to a 28x28 image with same padding. What is the output size?",
+            "options": [
+                "26x26",
+                "28x28",
+                "24x24",
+                "32x32"
+            ],
+            "answer": "28x28",
+            "co": "CO1"
+        },
+        {
+            "qno": 34,
+            "question": "Compute the number of parameters in a fully connected layer with 1024 input neurons and 256 output neurons.",
+            "options": [
+                "1024000",
+                "262144",
+                "256000",
+                "131072"
+            ],
+            "answer": "262144",
+            "co": "CO1"
+        },
+        {
+            "qno": 35,
+            "question": "A 2x2 pooling layer with stride 2 is applied to a 28x28 feature map. What is the output size?",
+            "options": [
+                "14x14",
+                "16x16",
+                "12x12",
+                "24x24"
+            ],
+            "answer": "14x14",
+            "co": "CO1"
+        },
+        {
+            "qno": 36,
+            "question": "A CNN has three convolutional layers, each with 32 filters of size 3x3 applied to a 64x64x3 input. Compute the number of trainable parameters (excluding biases).",
+            "options": [
+                "864",
+                "8640",
+                "24832",
+                "73728"
+            ],
+            "answer": "8640",
+            "co": "CO1"
+        },
+        {
+            "qno": 37,
+            "question": "Compute the variance of weight initialization using He initialization for a layer with 128 input neurons.",
+            "options": [
+                "0.05",
+                "0.02",
+                "0.125",
+                "0.015"
+            ],
+            "answer": "0.015",
+            "co": "CO1"
+        },
+        {
+            "qno": 38,
+            "question": "A GRU network has an input of 50 neurons and a hidden state of 100 neurons. Compute the total number of trainable parameters (excluding biases).",
+            "options": [
+                "15000",
+                "30000",
+                "45000",
+                "60000"
+            ],
+            "answer": "45000",
+            "co": "CO1"
+        },
+        {
+            "qno": 39,
+            "question": "An attention mechanism has a query, key, and value matrix of size 128x128. Compute the number of parameters.",
+            "options": [
+                "16384",
+                "49152",
+                "32768",
+                "65536"
+            ],
+            "answer": "49152",
+            "co": "CO1"
+        },
+        {
+            "qno": 40,
+            "question": "A neural network with dropout probability 0.25 has an expected activation of 0.8 before dropout. Compute expected activation after dropout during training.",
+            "options": [
+                "0.6",
+                "0.8",
+                "1",
+                "0.75"
+            ],
+            "answer": "1",
+            "co": "CO1"
+        },
+        {
+            "qno": 41,
+            "question": "A convolutional layer applies a 3x3 filter to a 128x128x64 feature map with stride 1 and same padding. Compute the output size.",
+            "options": [
+                "126x126x64",
+                "128x128x64",
+                "124x124x64",
+                "130x130x64"
+            ],
+            "answer": "128x128x64",
+            "co": "CO1"
+        },
+        {
+            "qno": 42,
+            "question": "A Transformer model has an embedding dimension of 512 and 8 attention heads. Compute the dimension of each head.",
+            "options": [
+                "32",
+                "128",
+                "64",
+                "256"
+            ],
+            "answer": "64",
+            "co": "CO1"
+        },
+        {
+            "qno": 43,
+            "question": "Compute the number of operations in a convolutional layer with 32 filters of size 3x3 applied to a 64x64x3 input with stride 1 and same padding.",
+            "options": [
+                "1179648",
+                "2359296",
+                "589824",
+                "294912"
+            ],
+            "answer": "1179648",
+            "co": "CO1"
+        },
+        {
+            "qno": 44,
+            "question": "An LSTM cell has 64 hidden units and an input size of 32. Compute the number of trainable parameters (excluding biases).",
+            "options": [
+                "12288",
+                "8192",
+                "16384",
+                "24576"
+            ],
+            "answer": "16384",
+            "co": "CO1"
+        },
+        {
+            "qno": 45,
+            "question": "A neural network with 256 input neurons has a hidden layer with 128 neurons. Compute the number of multiplications in a forward pass.",
+            "options": [
+                "32768",
+                "65536",
+                "16384",
+                "8192"
+            ],
+            "answer": "32768",
+            "co": "CO1"
+        },
+        {
+            "qno": 46,
+            "question": "A ViT model divides an image of size 512x512 into 16x16 patches. Compute the number of patches.",
+            "options": [
+                "512",
+                "1024",
+                "2048",
+                "4096"
+            ],
+            "answer": "1024",
+            "co": "CO1"
+        },
+        {
+            "qno": 47,
+            "question": "Compute the number of memory elements needed to store activations for a batch size of 64, with each sample having a 128x128x3 input stored in 32-bit floating-point format.",
+            "options": [
+                "12 MB",
+                "6 MB",
+                "24 MB",
+                "3 MB"
+            ],
+            "answer": "6 MB",
+            "co": "CO1"
+        },
+        {
+            "qno": 48,
+            "question": "A CNN applies a 5x5 filter to a 256x256x3 image with stride 2 and same padding. Compute the output size.",
+            "options": [
+                "126x126x3",
+                "128x128x3",
+                "252x252x3",
+                "254x254x3"
+            ],
+            "answer": "128x128x3",
+            "co": "CO1"
+        },
+        {
+            "qno": 49,
+            "question": "Compute the total number of trainable parameters in a 3-layer MLP with sizes 512-256-128.",
+            "options": [
+                "262144",
+                "327680",
+                "131072",
+                "393216"
+            ],
+            "answer": "327680",
+            "co": "CO1"
+        },
+        {
+            "qno": 50,
+            "question": "A company interviews three candidates M, N, and O. The chances of selection are 2:3:5. The probability that they will successfully execute a new strategy is 0.9, 0.7, and 0.5, respectively. If the strategy fails, what is the probability that O was selected?",
+            "options": [
+                "0.4",
+                "0.48",
+                "0.55",
+                "0.6"
+            ],
+            "answer": "0.55",
+            "co": "CO1"
+        }
+    ],
+    "CO2": [
+        {
+            "qno": 1,
+            "question": "A dataset has 1000 training samples and 500 validation samples. If a model achieves 95 percent accuracy on training and 75 percent on validation, what is the approximate generalization gap?",
+            "options": [
+                "20 percent",
+                "15 percent",
+                "10 percent",
+                "5 percent"
+            ],
+            "answer": "20 percent",
+            "co": "CO2"
+        },
+        {
+            "qno": 2,
+            "question": "A symmetric matrix has eigenvalues 2, 3, and 5. Compute its determinant.",
+            "options": [
+                "10",
+                "30",
+                "15",
+                "5"
+            ],
+            "answer": "30",
+            "co": "CO2"
+        },
+        {
+            "qno": 3,
+            "question": "A neural network has 3 layers with 128, 64, and 32 neurons, respectively. Compute the number of weight parameters (excluding bias).",
+            "options": [
+                "11584",
+                "16640",
+                "8192",
+                "9728"
+            ],
+            "answer": "11584",
+            "co": "CO2"
+        },
+        {
+            "qno": 4,
+            "question": "Compute the entropy of a probability distribution with probabilities 0.5, 0.25, and 0.25.",
+            "options": [
+                "1.5",
+                "1",
+                "0.75",
+                "2"
+            ],
+            "answer": "1.5",
+            "co": "CO2"
+        },
+        {
+            "qno": 5,
+            "question": "A function f(x) = x^3 is minimized using gradient descent with a learning rate of 0.1. Compute the first update step if the initial point is 2.",
+            "options": [
+                "1.2",
+                "1.4",
+                "1.6",
+                "1.8"
+            ],
+            "answer": "1.6",
+            "co": "CO2"
+        },
+        {
+            "qno": 6,
+            "question": "Compute the variance of a Bernoulli random variable with probability 0.6.",
+            "options": [
+                "0.24",
+                "0.36",
+                "0.16",
+                "0.4"
+            ],
+            "answer": "0.24",
+            "co": "CO2"
+        },
+        {
+            "qno": 7,
+            "question": "A dataset has 5000 samples, each with 256 features. Compute the number of weight parameters in a logistic regression model.",
+            "options": [
+                "1280000",
+                "256000",
+                "512000",
+                "64000"
+            ],
+            "answer": "1280000",
+            "co": "CO2"
+        },
+        {
+            "qno": 8,
+            "question": "A covariance matrix has eigenvalues 5, 3, and 2. Compute its trace.",
+            "options": [
+                "15",
+                "10",
+                "5",
+                "8"
+            ],
+            "answer": "10",
+            "co": "CO2"
+        },
+        {
+            "qno": 9,
+            "question": "A neural network has 784 input neurons, one hidden layer with 128 neurons, and an output layer with 10 neurons. Compute the total number of weight parameters.",
+            "options": [
+                "100352",
+                "103488",
+                "105728",
+                "101376"
+            ],
+            "answer": "103488",
+            "co": "CO2"
+        },
+        {
+            "qno": 10,
+            "question": "Compute the dot product of two vectors [2, 3, 5] and [4, 1, 2].",
+            "options": [
+                "19",
+                "20",
+                "21",
+                "22"
+            ],
+            "answer": "21",
+            "co": "CO2"
+        },
+        {
+            "qno": 11,
+            "question": "Compute the determinant of a diagonal matrix with entries 3, 4, and 5.",
+            "options": [
+                "12",
+                "60",
+                "15",
+                "20"
+            ],
+            "answer": "60",
+            "co": "CO2"
+        },
+        {
+            "qno": 12,
+            "question": "A Bayesian classifier assigns posterior probabilities of 0.7 and 0.3 to two classes. Compute the log-odds ratio.",
+            "options": [
+                "0.52",
+                "0.85",
+                "1.2",
+                "0.41"
+            ],
+            "answer": "0.52",
+            "co": "CO2"
+        },
+        {
+            "qno": 13,
+            "question": "A loss function is given by f(x) = x^4 - 4x^2. Compute its derivative at x = 2.",
+            "options": [
+                "0",
+                "16",
+                "8",
+                "-8"
+            ],
+            "answer": "0",
+            "co": "CO2"
+        },
+        {
+            "qno": 14,
+            "question": "Compute the information gain when splitting a dataset with entropy 1.0 into two subsets with entropy 0.6 and 0.7, weighted by 0.4 and 0.6.",
+            "options": [
+                "0.1",
+                "0.12",
+                "0.15",
+                "0.25"
+            ],
+            "answer": "0.12",
+            "co": "CO2"
+        },
+        {
+            "qno": 15,
+            "question": "A dataset has 500 samples, each with 100 features. Compute the number of parameters in a linear regression model.",
+            "options": [
+                "50000",
+                "5000",
+                "50100",
+                "50500"
+            ],
+            "answer": "50100",
+            "co": "CO2"
+        },
+        {
+            "qno": 16,
+            "question": "Compute the rank of a 3x3 matrix with linearly dependent rows.",
+            "options": [
+                "3",
+                "2",
+                "1",
+                "0"
+            ],
+            "answer": "2",
+            "co": "CO2"
+        },
+        {
+            "qno": 17,
+            "question": "A neural network with 3 hidden layers of 128 neurons each is trained using mini-batch gradient descent with batch size 64. How many forward passes are required for one epoch on a dataset with 10240 samples?",
+            "options": [
+                "100",
+                "200",
+                "150",
+                "250"
+            ],
+            "answer": "160",
+            "co": "CO2"
+        },
+        {
+            "qno": 18,
+            "question": "Compute the condition number of a matrix with singular values 5 and 0.5.",
+            "options": [
+                "2.5",
+                "5",
+                "10",
+                "20"
+            ],
+            "answer": "10",
+            "co": "CO2"
+        },
+        {
+            "qno": 19,
+            "question": "Compute the L2 norm of the vector [3, 4].",
+            "options": [
+                "5",
+                "7",
+                "4",
+                "6"
+            ],
+            "answer": "5",
+            "co": "CO2"
+        },
+        {
+            "qno": 20,
+            "question": "Compute the cross-entropy loss for a binary classifier predicting 0.9 for a true label of 1.",
+            "options": [
+                "0.05",
+                "0.1",
+                "0.11",
+                "0.15"
+            ],
+            "answer": "0.11",
+            "co": "CO2"
+        },
+        {
+            "qno": 21,
+            "question": "Compute the step size in gradient descent with learning rate 0.05 for a function with gradient 8.",
+            "options": [
+                "0.2",
+                "0.4",
+                "0.6",
+                "0.8"
+            ],
+            "answer": "0.4",
+            "co": "CO2"
+        },
+        {
+            "qno": 22,
+            "question": "A Markov chain has transition probabilities 0.7 and 0.3 for moving between two states. Compute the stationary probability of the first state.",
+            "options": [
+                "0.7",
+                "0.6",
+                "0.5",
+                "0.4"
+            ],
+            "answer": "0.7",
+            "co": "CO2"
+        },
+        {
+            "qno": 23,
+            "question": "Compute the number of parameters in a single-layer perceptron with 512 inputs and 10 outputs.",
+            "options": [
+                "5210",
+                "5200",
+                "5130",
+                "5100"
+            ],
+            "answer": "5130",
+            "co": "CO2"
+        },
+        {
+            "qno": 24,
+            "question": "Compute the expected number of iterations to reach convergence in stochastic gradient descent with a dataset of size 1000 and a batch size of 50, assuming full dataset coverage.",
+            "options": [
+                "10",
+                "20",
+                "50",
+                "100"
+            ],
+            "answer": "20",
+            "co": "CO2"
+        },
+        {
+            "qno": 25,
+            "question": "Compute the determinant of a 2x2 matrix with entries [4, 2, 3, 5].",
+            "options": [
+                "14",
+                "10",
+                "11",
+                "20"
+            ],
+            "answer": "14",
+            "co": "CO2"
+        },
+        {
+            "qno": 26,
+            "question": "A logistic regression model outputs a probability of 0.8 for class 1. Compute the log-likelihood if the true label is 1.",
+            "options": [
+                "-0.32",
+                "-0.1",
+                "-0.22",
+                "-0.05"
+            ],
+            "answer": "-0.22",
+            "co": "CO2"
+        },
+        {
+            "qno": 27,
+            "question": "A neural network with 256 input neurons and a hidden layer of 128 neurons has how many weight parameters (excluding biases)?",
+            "options": [
+                "32768",
+                "65536",
+                "12800",
+                "51200"
+            ],
+            "answer": "32768",
+            "co": "CO2"
+        },
+        {
+            "qno": 28,
+            "question": "Compute the eigenvalues of a diagonal matrix with entries 6, 3, and 2.",
+            "options": [
+                "2, 3, 6",
+                "3, 2, 5",
+                "6, 5, 4",
+                "6, 3, 2"
+            ],
+            "answer": "6, 3, 2",
+            "co": "CO2"
+        },
+        {
+            "qno": 29,
+            "question": "Compute the entropy of a uniform distribution with four possible outcomes.",
+            "options": [
+                "2",
+                "1.5",
+                "1",
+                "0.75"
+            ],
+            "answer": "2",
+            "co": "CO2"
+        },
+        {
+            "qno": 30,
+            "question": "A linear regression model has input dimension 20. Compute the number of weight parameters including bias.",
+            "options": [
+                "21",
+                "40",
+                "20",
+                "400"
+            ],
+            "answer": "21",
+            "co": "CO2"
+        },
+        {
+            "qno": 31,
+            "question": "A dataset has 5000 training samples and a mini-batch size of 50. Compute the number of batches per epoch.",
+            "options": [
+                "10",
+                "50",
+                "100",
+                "500"
+            ],
+            "answer": "100",
+            "co": "CO2"
+        },
+        {
+            "qno": 32,
+            "question": "A perceptron model has input weights [0.5, -0.3, 0.8] and an input vector [2, 4, 1]. Compute the weighted sum before activation.",
+            "options": [
+                "0.6",
+                "-0.4",
+                "1.2",
+                "1.3"
+            ],
+            "answer": "0.6",
+            "co": "CO2"
+        },
+        {
+            "qno": 33,
+            "question": "A covariance matrix has eigenvalues 4, 2, and 1. Compute its trace.",
+            "options": [
+                "3",
+                "7",
+                "5",
+                "6"
+            ],
+            "answer": "7",
+            "co": "CO2"
+        },
+        {
+            "qno": 34,
+            "question": "Compute the L1 norm of the vector [3, -4, 5].",
+            "options": [
+                "7",
+                "8",
+                "9",
+                "12"
+            ],
+            "answer": "12",
+            "co": "CO2"
+        },
+        {
+            "qno": 35,
+            "question": "Compute the expected loss for a Bernoulli variable with probability 0.7 if loss function is given by L(x) = x^2.",
+            "options": [
+                "0.49",
+                "0.7",
+                "0.42",
+                "0.51"
+            ],
+            "answer": "0.49",
+            "co": "CO2"
+        },
+        {
+            "qno": 36,
+            "question": "A loss function is given by f(x) = x^2 - 4x. Compute its minimum value.",
+            "options": [
+                "-4",
+                "-2",
+                "0",
+                "2"
+            ],
+            "answer": "-4",
+            "co": "CO2"
+        },
+        {
+            "qno": 37,
+            "question": "Compute the determinant of a 3x3 identity matrix.",
+            "options": [
+                "3",
+                "1",
+                "0",
+                "2"
+            ],
+            "answer": "1",
+            "co": "CO2"
+        },
+        {
+            "qno": 38,
+            "question": "Compute the probability of an event occurring at least once in three independent trials with success probability 0.2 in each trial.",
+            "options": [
+                "0.49",
+                "0.72",
+                "0.55",
+                "0.36"
+            ],
+            "answer": "0.49",
+            "co": "CO2"
+        },
+        {
+            "qno": 39,
+            "question": "A function f(x) = e^x is minimized using gradient descent with learning rate 0.1. Compute the first update if the initial point is 1.",
+            "options": [
+                "0.9",
+                "0.8",
+                "0.85",
+                "1.1"
+            ],
+            "answer": "0.9",
+            "co": "CO2"
+        },
+        {
+            "qno": 40,
+            "question": "Compute the variance of a uniform distribution over [0, 4].",
+            "options": [
+                "1.33",
+                "2",
+                "1",
+                "0.8"
+            ],
+            "answer": "1.33",
+            "co": "CO2"
+        },
+        {
+            "qno": 41,
+            "question": "A neural network uses ReLU activation. Compute f(3) - f(-2).",
+            "options": [
+                "1",
+                "3",
+                "5",
+                "2"
+            ],
+            "answer": "5",
+            "co": "CO2"
+        },
+        {
+            "qno": 42,
+            "question": "Compute the number of parameters in a fully connected layer with 300 input neurons and 100 output neurons.",
+            "options": [
+                "30000",
+                "30100",
+                "30200",
+                "31000"
+            ],
+            "answer": "30100",
+            "co": "CO2"
+        },
+        {
+            "qno": 43,
+            "question": "Compute the trace of a 2x2 matrix with entries [1, 2, 3, 4].",
+            "options": [
+                "4",
+                "5",
+                "6",
+                "7"
+            ],
+            "answer": "5",
+            "co": "CO2"
+        },
+        {
+            "qno": 44,
+            "question": "A Markov chain has transition probabilities 0.6 and 0.4 for moving between two states. Compute the stationary probability of the first state.",
+            "options": [
+                "0.6",
+                "0.4",
+                "0.5",
+                "0.2"
+            ],
+            "answer": "0.6",
+            "co": "CO2"
+        },
+        {
+            "qno": 45,
+            "question": "Compute the cross-entropy loss for a classifier predicting 0.7 for the true label of 1.",
+            "options": [
+                "0.51",
+                "0.36",
+                "0.65",
+                "0.42"
+            ],
+            "answer": "0.36",
+            "co": "CO2"
+        },
+        {
+            "qno": 46,
+            "question": "Compute the condition number of a matrix with singular values 8 and 2.",
+            "options": [
+                "2",
+                "4",
+                "8",
+                "6"
+            ],
+            "answer": "4",
+            "co": "CO2"
+        },
+        {
+            "qno": 47,
+            "question": "Compute the dot product of vectors [1, -2, 3] and [-1, 2, -3].",
+            "options": [
+                "-10",
+                "-12",
+                "10",
+                "12"
+            ],
+            "answer": "-10",
+            "co": "CO2"
+        },
+        {
+            "qno": 48,
+            "question": "Compute the number of epochs required to complete 50000 iterations if batch size is 100 and dataset size is 5000.",
+            "options": [
+                "5",
+                "10",
+                "50",
+                "100"
+            ],
+            "answer": "10",
+            "co": "CO2"
+        },
+        {
+            "qno": 49,
+            "question": "A company employs 800 software developers, 600 testers, and 400 managers. The probability of a project delay occurring due to each group is 0.03, 0.05, and 0.07, respectively. If a delay is reported, what is the probability that a developer was responsible?",
+            "options": [
+                "0.3",
+                "0.35",
+                "0.4",
+                "0.45"
+            ],
+            "answer": "0.3",
+            "co": "CO2"
+        },
+        {
+            "qno": 50,
+            "question": "A country has three airlines: Airline A (200 aircraft), Airline B (300 aircraft), and Airline C (500 aircraft). The probability of a flight delay for each airline is 0.02, 0.03, and 0.05, respectively. If a delay is reported, what is the probability that it was from Airline A?",
+            "options": [
+                "0.11",
+                "0.13",
+                "0.15",
+                "0.17"
+            ],
+            "answer": "0.11",
+            "co": "CO2"
+        }
+    ],
+    "CO3": [
+        {
+            "qno": 1,
+            "question": "A deep neural network has 4 layers with 256, 128, 64, and 32 neurons respectively. Compute the total number of weight parameters (excluding bias).",
+            "options": [
+                "45056",
+                "65280",
+                "98176",
+                "32768"
+            ],
+            "answer": "65280",
+            "co": "CO3"
+        },
+        {
+            "qno": 2,
+            "question": "Compute the number of trainable parameters in a convolutional layer with 32 filters of size 3x3 applied to 16 input channels.",
+            "options": [
+                "4608",
+                "9248",
+                "5632",
+                "9232"
+            ],
+            "answer": "4608",
+            "co": "CO3"
+        },
+        {
+            "qno": 3,
+            "question": "A neural network has a ReLU activation function. Compute f(4) - f(-3).",
+            "options": [
+                "1",
+                "4",
+                "7",
+                "3"
+            ],
+            "answer": "7",
+            "co": "CO3"
+        },
+        {
+            "qno": 4,
+            "question": "A neural network with 512 input neurons and a hidden layer with 256 neurons has how many weight parameters?",
+            "options": [
+                "131072",
+                "65536",
+                "262144",
+                "51200"
+            ],
+            "answer": "131072",
+            "co": "CO3"
+        },
+        {
+            "qno": 5,
+            "question": "Compute the backpropagated gradient at layer 3 if layer 4 has a gradient of 0.5 and the weight connecting them is 0.8.",
+            "options": [
+                "0.5",
+                "0.4",
+                "0.6",
+                "0.8"
+            ],
+            "answer": "0.4",
+            "co": "CO3"
+        },
+        {
+            "qno": 6,
+            "question": "Compute the determinant of a diagonal Hessian matrix with eigenvalues 2, 3, and 5.",
+            "options": [
+                "30",
+                "10",
+                "15",
+                "25"
+            ],
+            "answer": "30",
+            "co": "CO3"
+        },
+        {
+            "qno": 7,
+            "question": "Compute the number of epochs required to complete 100000 iterations if the batch size is 200 and the dataset size is 5000.",
+            "options": [
+                "10",
+                "20",
+                "50",
+                "100"
+            ],
+            "answer": "20",
+            "co": "CO3"
+        },
+        {
+            "qno": 8,
+            "question": "A convolutional layer applies 64 filters of size 5x5 to an input of 32 channels. Compute the number of parameters.",
+            "options": [
+                "51200",
+                "54080",
+                "81920",
+                "50000"
+            ],
+            "answer": "51200",
+            "co": "CO3"
+        },
+        {
+            "qno": 9,
+            "question": "Compute the trace of a Hessian matrix with eigenvalues 4, 2, and 7.",
+            "options": [
+                "9",
+                "11",
+                "13",
+                "15"
+            ],
+            "answer": "13",
+            "co": "CO3"
+        },
+        {
+            "qno": 10,
+            "question": "A loss function is given by f(x) = x^3 - 3x^2 + 2x. Compute its derivative at x = 2.",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "answer": "1",
+            "co": "CO3"
+        },
+        {
+            "qno": 11,
+            "question": "Compute the weight update in gradient descent if the learning rate is 0.01 and the gradient is 5.",
+            "options": [
+                "0.02",
+                "0.03",
+                "0.05",
+                "0.01"
+            ],
+            "answer": "0.05",
+            "co": "CO3"
+        },
+        {
+            "qno": 12,
+            "question": "Compute the number of weight parameters in a fully connected layer with 1024 input neurons and 256 output neurons.",
+            "options": [
+                "524288",
+                "262144",
+                "131072",
+                "65536"
+            ],
+            "answer": "262144",
+            "co": "CO3"
+        },
+        {
+            "qno": 13,
+            "question": "Compute the variance of the weight initialization if Xavier initialization is used with 128 input neurons.",
+            "options": [
+                "1/128",
+                "2/128",
+                "1964-01-01 00:00:00",
+                "1/256"
+            ],
+            "answer": "1/128",
+            "co": "CO3"
+        },
+        {
+            "qno": 14,
+            "question": "Compute the moving average of a gradient using momentum 0.9 if the previous average is 0.2 and the current gradient is 0.8.",
+            "options": [
+                "0.28",
+                "0.34",
+                "0.38",
+                "0.56"
+            ],
+            "answer": "0.28",
+            "co": "CO3"
+        },
+        {
+            "qno": 15,
+            "question": "Compute the number of trainable parameters in a convolutional layer with 128 filters of size 7x7 applied to 64 input channels.",
+            "options": [
+                "401920",
+                "602112",
+                "802816",
+                "501760"
+            ],
+            "answer": "401920",
+            "co": "CO3"
+        },
+        {
+            "qno": 16,
+            "question": "Compute the step size in Adam optimization with beta1 = 0.9 and beta2 = 0.999 if the learning rate is 0.01 and the moment estimates are 0.2 and 0.5.",
+            "options": [
+                "0.004",
+                "0.006",
+                "0.008",
+                "0.01"
+            ],
+            "answer": "0.004",
+            "co": "CO3"
+        },
+        {
+            "qno": 17,
+            "question": "Compute the softmax output for a neuron with a raw score of 2 when the other neuron has a raw score of 1.",
+            "options": [
+                "0.27",
+                "0.42",
+                "0.73",
+                "0.65"
+            ],
+            "answer": "0.73",
+            "co": "CO3"
+        },
+        {
+            "qno": 18,
+            "question": "Compute the dropout scaling factor if a dropout rate of 0.5 is applied to a layer.",
+            "options": [
+                "1.5",
+                "2",
+                "2.5",
+                "3"
+            ],
+            "answer": "2",
+            "co": "CO3"
+        },
+        {
+            "qno": 19,
+            "question": "Compute the number of weight parameters in a batch normalization layer applied to 256 neurons.",
+            "options": [
+                "256",
+                "512",
+                "1024",
+                "128"
+            ],
+            "answer": "512",
+            "co": "CO3"
+        },
+        {
+            "qno": 20,
+            "question": "A function f(x) = sin(x) is trained with backpropagation. Compute its gradient at x = pi/4.",
+            "options": [
+                "0.5",
+                "0.7",
+                "0.707",
+                "0.6"
+            ],
+            "answer": "0.707",
+            "co": "CO3"
+        },
+        {
+            "qno": 21,
+            "question": "Compute the receptive field size after applying 3 convolutional layers with filter size 3 and stride 1.",
+            "options": [
+                "3",
+                "5",
+                "7",
+                "9"
+            ],
+            "answer": "7",
+            "co": "CO3"
+        },
+        {
+            "qno": 22,
+            "question": "Compute the L2 norm of the weight vector [3, 4, 12].",
+            "options": [
+                "10",
+                "13",
+                "12",
+                "14"
+            ],
+            "answer": "13",
+            "co": "CO3"
+        },
+        {
+            "qno": 23,
+            "question": "Compute the batch normalization output if input is 1.5, mean is 1.0, standard deviation is 0.5, and scale parameter is 2.",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "answer": "2",
+            "co": "CO3"
+        },
+        {
+            "qno": 24,
+            "question": "Compute the update in gradient descent with momentum if the previous velocity is -0.5, momentum is 0.9, gradient is 0.4, and learning rate is 0.01.",
+            "options": [
+                "-0.41",
+                "-0.46",
+                "-0.49",
+                "-0.52"
+            ],
+            "answer": "-0.46",
+            "co": "CO3"
+        },
+        {
+            "qno": 25,
+            "question": "Compute the activation value of a sigmoid function for an input of 0.",
+            "options": [
+                "0.5",
+                "0.6",
+                "0.4",
+                "0.7"
+            ],
+            "answer": "0.5",
+            "co": "CO3"
+        },
+        {
+            "qno": 26,
+            "question": "Compute the number of trainable parameters in a convolutional layer with 64 filters of size 5x5 applied to 32 input channels.",
+            "options": [
+                "51200",
+                "51264",
+                "54080",
+                "50000"
+            ],
+            "answer": "51264",
+            "co": "CO3"
+        },
+        {
+            "qno": 27,
+            "question": "A neural network has an initial loss of 1.0. After applying L2 regularization with lambda = 0.1 and weight norm 2, compute the new loss.",
+            "options": [
+                "1.2",
+                "1.4",
+                "1.02",
+                "1.1"
+            ],
+            "answer": "1.02",
+            "co": "CO3"
+        },
+        {
+            "qno": 28,
+            "question": "Compute the derivative of ReLU activation at x = -3.",
+            "options": [
+                "-1",
+                "0",
+                "1",
+                "3"
+            ],
+            "answer": "0",
+            "co": "CO3"
+        },
+        {
+            "qno": 29,
+            "question": "Compute the total number of weight parameters in a neural network with 1024 input neurons, one hidden layer with 512 neurons, and an output layer with 10 neurons.",
+            "options": [
+                "524800",
+                "537600",
+                "525322",
+                "530432"
+            ],
+            "answer": "537600",
+            "co": "CO3"
+        },
+        {
+            "qno": 30,
+            "question": "Compute the number of output neurons in a convolutional layer with input size 32, filter size 5, stride 1, and padding 2.",
+            "options": [
+                "28",
+                "30",
+                "32",
+                "34"
+            ],
+            "answer": "32",
+            "co": "CO3"
+        },
+        {
+            "qno": 31,
+            "question": "Compute the update in RMSprop if the squared gradient estimate is 0.04, epsilon is 1e-8, and learning rate is 0.01 for a gradient of 0.2.",
+            "options": [
+                "0.05",
+                "0.01",
+                "0.03",
+                "0.02"
+            ],
+            "answer": "0.01",
+            "co": "CO3"
+        },
+        {
+            "qno": 32,
+            "question": "Compute the softmax output for a neuron with raw score 3 when another neuron has a raw score 1.",
+            "options": [
+                "0.88",
+                "0.73",
+                "0.77",
+                "0.66"
+            ],
+            "answer": "0.88",
+            "co": "CO3"
+        },
+        {
+            "qno": 33,
+            "question": "Compute the effective learning rate in Adam optimization for beta1 = 0.9, beta2 = 0.999, moment estimates 0.3 and 0.7, and learning rate 0.01.",
+            "options": [
+                "0.005",
+                "0.006",
+                "0.004",
+                "0.007"
+            ],
+            "answer": "0.004",
+            "co": "CO3"
+        },
+        {
+            "qno": 34,
+            "question": "Compute the receptive field size after applying 4 convolutional layers with filter size 3 and stride 1.",
+            "options": [
+                "5",
+                "7",
+                "9",
+                "11"
+            ],
+            "answer": "9",
+            "co": "CO3"
+        },
+        {
+            "qno": 35,
+            "question": "Compute the batch normalization output if input is 2, mean is 1, standard deviation is 0.5, and scale parameter is 3.",
+            "options": [
+                "2",
+                "3",
+                "6",
+                "9"
+            ],
+            "answer": "6",
+            "co": "CO3"
+        },
+        {
+            "qno": 36,
+            "question": "Compute the total number of parameters in a fully connected layer with 2048 input neurons and 512 output neurons.",
+            "options": [
+                "1048576",
+                "1024000",
+                "1050624",
+                "1032192"
+            ],
+            "answer": "1048576",
+            "co": "CO3"
+        },
+        {
+            "qno": 37,
+            "question": "A convolutional neural network applies a filter of size 5x5 to a 64-channel input. Compute the number of weight parameters if there are 128 filters.",
+            "options": [
+                "204800",
+                "102400",
+                "81920",
+                "160000"
+            ],
+            "answer": "81920",
+            "co": "CO3"
+        },
+        {
+            "qno": 38,
+            "question": "Compute the weight update in momentum-based gradient descent with momentum 0.9 if the previous velocity is -0.6 and the gradient is 0.3 with a learning rate of 0.01.",
+            "options": [
+                "-0.57",
+                "-0.51",
+                "-0.63",
+                "-0.66"
+            ],
+            "answer": "-0.57",
+            "co": "CO3"
+        },
+        {
+            "qno": 39,
+            "question": "Compute the L2 norm of the weight vector [6, 8, 10].",
+            "options": [
+                "12",
+                "14",
+                "16",
+                "18"
+            ],
+            "answer": "14",
+            "co": "CO3"
+        },
+        {
+            "qno": 40,
+            "question": "Compute the batch normalization output if input is 3, mean is 2, standard deviation is 0.5, and scale parameter is 1.5.",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "answer": "3",
+            "co": "CO3"
+        },
+        {
+            "qno": 41,
+            "question": "For the given neural-network system, commpute the weighted sum for X = [3, 0.3, 0.6] and W = [0.9, 0.6, 0.7] for a three input neural network system.",
+            "options": [
+                "3.87",
+                "3.85",
+                "3.95",
+                "4"
+            ],
+            "answer": "3.87",
+            "co": "CO3"
+        },
+        {
+            "qno": 42,
+            "question": "In a neural-network system having the following input and weight, compute the output for X = [2, 0.5, 0.7] and W = [0.8, 0.5, 0.6]",
+            "options": [
+                "2.97",
+                "3.05",
+                "3.1",
+                "3.15"
+            ],
+            "answer": "2.97",
+            "co": "CO3"
+        },
+        {
+            "qno": 43,
+            "question": "An automatic system with input-weight combination between input and hiddenunit is as follows, compute weighted sum for X = [4, 0.4, 0.5] and W = [0.7, 0.6, 0.8]",
+            "options": [
+                "3.98",
+                "3.85",
+                "4.05",
+                "4.2"
+            ],
+            "answer": "3.98",
+            "co": "CO3"
+        },
+        {
+            "qno": 44,
+            "question": "For a three input neural model, compute output for X = [3, 0.6, 0.8] and W = [0.6, 0.7, 0.5]",
+            "options": [
+                "3.68",
+                "3.75",
+                "3.8",
+                "3.85"
+            ],
+            "answer": "3.68",
+            "co": "CO3"
+        },
+        {
+            "qno": 45,
+            "question": "for a give system, compute weighted sum for X = [2, 0.9, 1] and W = [0.8, 0.6, 0.5]",
+            "options": [
+                "2.95",
+                "3.05",
+                "3.1",
+                "3.2"
+            ],
+            "answer": "3.05",
+            "co": "CO3"
+        },
+        {
+            "qno": 46,
+            "question": "for an automatic system which recommends a production having threshold of  Ө = 4.6, will the system recommend the product  for X = [3, 1.5, 1, 0.5] and W = [0.6, 0.8, 0.7, 0.5]?",
+            "options": [
+                "4.2",
+                "3.8",
+                "4.5",
+                "3.6"
+            ],
+            "answer": "4.2",
+            "co": "CO3"
+        },
+        {
+            "qno": 47,
+            "question": "When the threshold value of car recommendation system is specified as; Ө = 5.2, given X = [2.5, 2, 1.2, 0.8] and W = [0.7, 0.6, 0.9, 0.4]. Compute the outcome.",
+            "options": [
+                "3.95",
+                "4.85",
+                "5.25",
+                "4.45"
+            ],
+            "answer": "4.85",
+            "co": "CO3"
+        },
+        {
+            "qno": 48,
+            "question": "A mobile phone recommendstion system specified with a threshold of  Ө = 3.8, will the system recommend the mobile to purchase, if  when X = [2, 1.8, 1.5, 1] and W = [0.9, 0.7, 0.6, 0.5]?",
+            "options": [
+                "4.05",
+                "3.75",
+                "4.2",
+                "3.95"
+            ],
+            "answer": "4.05",
+            "co": "CO3"
+        },
+        {
+            "qno": 49,
+            "question": "For a neural system with threshold; Ө = 4.2, should the system recommend the food for X = [3.2, 1.7, 1, 0.6] and W = [0.5, 0.9, 0.8, 0.6]?",
+            "options": [
+                "4.18",
+                "3.96",
+                "4.32",
+                "4.05"
+            ],
+            "answer": "4.18",
+            "co": "CO3"
+        },
+        {
+            "qno": 50,
+            "question": "An automatic product selection system is having a threshold of ; Ө = 4.0, and X = [3, 1.5, 1, 0.5] while W = [0.7, 0.6, 0.8, 0.5], compute the new threshold value which supports the product.",
+            "options": [
+                "4.2",
+                "3.95",
+                "4.35",
+                "4.1"
+            ],
+            "answer": "4.2",
+            "co": "CO3"
+        }
+    ],
+    "CO4": [
+        {
+            "qno": 1,
+            "question": "Compute the number of parameters in a probabilistic PCA model with 20 observed variables and 5 latent factors, including a diagonal noise covariance.",
+            "options": [
+                "120",
+                "105",
+                "110",
+                "115"
+            ],
+            "answer": "110",
+            "co": "CO4"
+        },
+        {
+            "qno": 2,
+            "question": "Given a factor analysis model with 10 observed variables and 3 latent factors, compute the number of loadings in the factor loading matrix.",
+            "options": [
+                "10",
+                "30",
+                "13",
+                "3"
+            ],
+            "answer": "30",
+            "co": "CO4"
+        },
+        {
+            "qno": 3,
+            "question": "Compute the total number of independent parameters in a covariance matrix for a factor analysis model with 8 observed variables.",
+            "options": [
+                "36",
+                "64",
+                "28",
+                "32"
+            ],
+            "answer": "36",
+            "co": "CO4"
+        },
+        {
+            "qno": 4,
+            "question": "Compute the determinant of a covariance matrix in PCA where eigenvalues are 2, 3, and 5.",
+            "options": [
+                "10",
+                "15",
+                "30",
+                "25"
+            ],
+            "answer": "30",
+            "co": "CO4"
+        },
+        {
+            "qno": 5,
+            "question": "In Independent Component Analysis, given two independent sources with variances 4 and 9, compute the variance of a linear mixture with coefficients 2 and 3.",
+            "options": [
+                "16",
+                "25",
+                "29",
+                "32"
+            ],
+            "answer": "29",
+            "co": "CO4"
+        },
+        {
+            "qno": 6,
+            "question": "Compute the number of independent parameters in an ICA mixing matrix for 5 observed signals and 3 independent sources.",
+            "options": [
+                "10",
+                "15",
+                "20",
+                "5"
+            ],
+            "answer": "15",
+            "co": "CO4"
+        },
+        {
+            "qno": 7,
+            "question": "Compute the whitening transformation matrix for PCA if the eigenvalues are 4, 9, and 16.",
+            "options": [
+                "0.5, 0.33, 0.25",
+                "0.25, 0.33, 0.5",
+                "0.5, 0.67, 0.25",
+                "0.33, 0.5, 0.25"
+            ],
+            "answer": "0.5, 0.33, 0.25",
+            "co": "CO4"
+        },
+        {
+            "qno": 8,
+            "question": "Compute the Frobenius norm of a factor loading matrix with elements [1, 2, 3, 4, 5, 6].",
+            "options": [
+                "8.37",
+                "9",
+                "9.75",
+                "10.45"
+            ],
+            "answer": "9.75",
+            "co": "CO4"
+        },
+        {
+            "qno": 9,
+            "question": "Compute the entropy of a Gaussian variable with variance 4.",
+            "options": [
+                "2.45",
+                "2.76",
+                "3.14",
+                "1.98"
+            ],
+            "answer": "2.76",
+            "co": "CO4"
+        },
+        {
+            "qno": 10,
+            "question": "Compute the reconstruction error in PCA if data variance is 10 and the first two principal components explain 80% of the variance.",
+            "options": [
+                "2",
+                "4",
+                "6",
+                "8"
+            ],
+            "answer": "2",
+            "co": "CO4"
+        },
+        {
+            "qno": 11,
+            "question": "Compute the determinant of a structured graphical model’s adjacency matrix if it has eigenvalues 1, 2, and 3.",
+            "options": [
+                "3",
+                "5",
+                "6",
+                "7"
+            ],
+            "answer": "6",
+            "co": "CO4"
+        },
+        {
+            "qno": 12,
+            "question": "Compute the expected log-likelihood of a Gaussian latent variable model with mean 0, variance 1, and observed value 2.",
+            "options": [
+                "-1",
+                "-2",
+                "-3",
+                "-4"
+            ],
+            "answer": "-2",
+            "co": "CO4"
+        },
+        {
+            "qno": 13,
+            "question": "Compute the KL divergence between two Gaussian distributions with variances 1 and 4.",
+            "options": [
+                "0.5",
+                "0.75",
+                "1",
+                "1.25"
+            ],
+            "answer": "0.75",
+            "co": "CO4"
+        },
+        {
+            "qno": 14,
+            "question": "Compute the L1 norm of a sparse coding solution with elements [1, -2, 3, -4].",
+            "options": [
+                "10",
+                "9",
+                "8",
+                "7"
+            ],
+            "answer": "10",
+            "co": "CO4"
+        },
+        {
+            "qno": 15,
+            "question": "Compute the rank of a covariance matrix in PCA if there are 6 observed variables but only 3 principal components have nonzero variance.",
+            "options": [
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "answer": "3",
+            "co": "CO4"
+        },
+        {
+            "qno": 16,
+            "question": "Compute the optimal sparse representation in a dictionary learning problem with a sparsity constraint of 2 given an overcomplete dictionary with 5 basis vectors.",
+            "options": [
+                "2",
+                "3",
+                "4",
+                "5"
+            ],
+            "answer": "2",
+            "co": "CO4"
+        },
+        {
+            "qno": 17,
+            "question": "Compute the mutual information between two independent Gaussian variables with variances 2 and 3.",
+            "options": [
+                "0",
+                "1",
+                "2",
+                "3"
+            ],
+            "answer": "0",
+            "co": "CO4"
+        },
+        {
+            "qno": 18,
+            "question": "Compute the entropy of an exponential distribution with mean 2.",
+            "options": [
+                "1",
+                "1.5",
+                "2",
+                "2.5"
+            ],
+            "answer": "1.5",
+            "co": "CO4"
+        },
+        {
+            "qno": 19,
+            "question": "Compute the minimum number of edges in a Bayesian network with 5 nodes to ensure full connectivity.",
+            "options": [
+                "4",
+                "5",
+                "6",
+                "7"
+            ],
+            "answer": "4",
+            "co": "CO4"
+        },
+        {
+            "qno": 20,
+            "question": "Compute the number of parameters in a Markov random field with 4 nodes and pairwise dependencies.",
+            "options": [
+                "4",
+                "6",
+                "8",
+                "10"
+            ],
+            "answer": "6",
+            "co": "CO4"
+        },
+        {
+            "qno": 21,
+            "question": "Compute the total number of possible tree structures in a graphical model with 5 nodes.",
+            "options": [
+                "10",
+                "15",
+                "16",
+                "25"
+            ],
+            "answer": "16",
+            "co": "CO4"
+        },
+        {
+            "qno": 22,
+            "question": "Compute the steady-state probability of a Markov chain with two states and transition matrix [[0.7, 0.3], [0.4, 0.6]].",
+            "options": [
+                "0.6",
+                "0.57",
+                "0.54",
+                "0.5"
+            ],
+            "answer": "0.57",
+            "co": "CO4"
+        },
+        {
+            "qno": 23,
+            "question": "Compute the rank of the adjacency matrix of a fully connected undirected graphical model with 4 nodes.",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "answer": "3",
+            "co": "CO4"
+        },
+        {
+            "qno": 24,
+            "question": "Compute the number of independent parameters in a Gaussian graphical model with 6 variables and a sparse precision matrix with 8 nonzero entries.",
+            "options": [
+                "8",
+                "15",
+                "21",
+                "28"
+            ],
+            "answer": "8",
+            "co": "CO4"
+        },
+        {
+            "qno": 25,
+            "question": "Compute the rank of a factor loading matrix in a factor analysis model with 12 observed variables and 4 latent factors.",
+            "options": [
+                "4",
+                "6",
+                "8",
+                "12"
+            ],
+            "answer": "4",
+            "co": "CO4"
+        },
+        {
+            "qno": 26,
+            "question": "Compute the determinant of a covariance matrix in ICA where eigenvalues are 2, 4, and 8.",
+            "options": [
+                "64",
+                "14",
+                "20",
+                "32"
+            ],
+            "answer": "64",
+            "co": "CO4"
+        },
+        {
+            "qno": 27,
+            "question": "In PCA, if the first 3 principal components capture 85% of variance in 10D data, what fraction of variance is lost?",
+            "options": [
+                "0.15",
+                "0.25",
+                "0.35",
+                "0.5"
+            ],
+            "answer": "0.15",
+            "co": "CO4"
+        },
+        {
+            "qno": 28,
+            "question": "Compute the trace of the covariance matrix of a dataset where variance along dimensions is [3, 5, 2, 7].",
+            "options": [
+                "14",
+                "17",
+                "10",
+                "12"
+            ],
+            "answer": "17",
+            "co": "CO4"
+        },
+        {
+            "qno": 29,
+            "question": "Compute the total number of independent parameters in a Bayesian network with 6 nodes and 4 directed edges.",
+            "options": [
+                "10",
+                "12",
+                "14",
+                "16"
+            ],
+            "answer": "12",
+            "co": "CO4"
+        },
+        {
+            "qno": 30,
+            "question": "Compute the entropy of a Gaussian variable with variance 5.",
+            "options": [
+                "2.74",
+                "3.04",
+                "3.21",
+                "2.98"
+            ],
+            "answer": "3.04",
+            "co": "CO4"
+        },
+        {
+            "qno": 31,
+            "question": "Compute the determinant of an adjacency matrix for a graphical model with eigenvalues [2, 3, 4].",
+            "options": [
+                "18",
+                "20",
+                "24",
+                "27"
+            ],
+            "answer": "24",
+            "co": "CO4"
+        },
+        {
+            "qno": 32,
+            "question": "Compute the KL divergence between two Gaussian distributions with variances 3 and 6.",
+            "options": [
+                "0.22",
+                "0.31",
+                "0.48",
+                "0.58"
+            ],
+            "answer": "0.31",
+            "co": "CO4"
+        },
+        {
+            "qno": 33,
+            "question": "Compute the L1 norm of a sparse coding solution with values [3, -1, 0, 5, -2].",
+            "options": [
+                "11",
+                "10",
+                "9",
+                "8"
+            ],
+            "answer": "11",
+            "co": "CO4"
+        },
+        {
+            "qno": 34,
+            "question": "Compute the rank of a covariance matrix in a PCA model where 4 components explain all the variance of a 7D dataset.",
+            "options": [
+                "4",
+                "5",
+                "6",
+                "7"
+            ],
+            "answer": "4",
+            "co": "CO4"
+        },
+        {
+            "qno": 35,
+            "question": "Compute the number of edges in a tree-structured graphical model with 9 nodes.",
+            "options": [
+                "7",
+                "8",
+                "9",
+                "10"
+            ],
+            "answer": "8",
+            "co": "CO4"
+        },
+        {
+            "qno": 36,
+            "question": "Compute the steady-state probability of a Markov chain with two states and transition matrix [[0.6, 0.4], [0.5, 0.5]].",
+            "options": [
+                "0.45",
+                "0.5",
+                "0.55",
+                "0.6"
+            ],
+            "answer": "0.55",
+            "co": "CO4"
+        },
+        {
+            "qno": 37,
+            "question": "Compute the number of trainable parameters in an ICA model with 4 observed signals and 3 independent sources.",
+            "options": [
+                "10",
+                "12",
+                "14",
+                "16"
+            ],
+            "answer": "12",
+            "co": "CO4"
+        },
+        {
+            "qno": 38,
+            "question": "Compute the whitening transformation matrix for PCA if the eigenvalues are 1, 4, and 9.",
+            "options": [
+                "1, 0.5, 0.33",
+                "0.33, 0.5, 1",
+                "1, 0.25, 0.33",
+                "0.5, 1, 0.33"
+            ],
+            "answer": "1, 0.5, 0.33",
+            "co": "CO4"
+        },
+        {
+            "qno": 39,
+            "question": "Compute the determinant of a structured graphical model’s adjacency matrix if it has eigenvalues 1, 2, and 4.",
+            "options": [
+                "5",
+                "6",
+                "7",
+                "8"
+            ],
+            "answer": "8",
+            "co": "CO4"
+        },
+        {
+            "qno": 40,
+            "question": "Compute the total number of independent parameters in a Gaussian graphical model with 7 variables and a sparse precision matrix with 9 nonzero entries.",
+            "options": [
+                "9",
+                "15",
+                "21",
+                "28"
+            ],
+            "answer": "9",
+            "co": "CO4"
+        },
+        {
+            "qno": 41,
+            "question": "Compute the mutual information between two independent Gaussian variables with variances 3 and 5.",
+            "options": [
+                "0",
+                "0.25",
+                "0.5",
+                "0.75"
+            ],
+            "answer": "0",
+            "co": "CO4"
+        },
+        {
+            "qno": 42,
+            "question": "Compute the entropy of an exponential distribution with mean 3.",
+            "options": [
+                "1.2",
+                "1.5",
+                "1.85",
+                "2.1"
+            ],
+            "answer": "1.85",
+            "co": "CO4"
+        },
+        {
+            "qno": 43,
+            "question": "Compute the minimum number of edges in a Bayesian network with 7 nodes to ensure full connectivity.",
+            "options": [
+                "5",
+                "6",
+                "7",
+                "8"
+            ],
+            "answer": "6",
+            "co": "CO4"
+        },
+        {
+            "qno": 44,
+            "question": "Compute the rank of the adjacency matrix of a fully connected undirected graphical model with 5 nodes.",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "answer": "3",
+            "co": "CO4"
+        },
+        {
+            "qno": 45,
+            "question": "Compute the optimal sparse representation in a dictionary learning problem with a sparsity constraint of 3 given an overcomplete dictionary with 7 basis vectors.",
+            "options": [
+                "2",
+                "3",
+                "4",
+                "5"
+            ],
+            "answer": "3",
+            "co": "CO4"
+        },
+        {
+            "qno": 46,
+            "question": "Compute the total number of possible spanning trees in a graphical model with 6 nodes.",
+            "options": [
+                "50",
+                "120",
+                "200",
+                "300"
+            ],
+            "answer": "200",
+            "co": "CO4"
+        },
+        {
+            "qno": 47,
+            "question": "Compute the number of independent parameters in a covariance matrix for a factor analysis model with 9 observed variables.",
+            "options": [
+                "36",
+                "45",
+                "72",
+                "81"
+            ],
+            "answer": "45",
+            "co": "CO4"
+        },
+        {
+            "qno": 48,
+            "question": "Compute the total number of trainable parameters in a Markov random field with 5 nodes and pairwise dependencies.",
+            "options": [
+                "5",
+                "7",
+                "10",
+                "12"
+            ],
+            "answer": "10",
+            "co": "CO4"
+        },
+        {
+            "qno": 49,
+            "question": "The confusion matrix for health condition assessment in a neural network-based classification model yielded these results; TP = 55, FP = 18, FN = 27, TN = 130, what is Sensitivity?",
+            "options": [
+                "0.64",
+                "0.66",
+                "0.67",
+                "0.68"
+            ],
+            "answer": "0.67",
+            "co": "CO4"
+        },
+        {
+            "qno": 50,
+            "question": "The confusion matrix for abnormality diagnosis in an AI-powered classification system showed the following values; TP = 55, FP = 18, FN = 27, TN = 130, what is Specificity?",
+            "options": [
+                "0.83",
+                "0.85",
+                "0.86",
+                "0.82"
+            ],
+            "answer": "0.83",
+            "co": "CO4"
+        }
+    ],
+    "CO5": [
+        {
+            "qno": 1,
+            "question": "A Restricted Boltzmann Machine has 100 visible units and 50 hidden units. How many weight parameters are present?",
+            "options": [
+                "5000",
+                "150",
+                "500",
+                "50"
+            ],
+            "answer": "5000",
+            "co": "CO5"
+        },
+        {
+            "qno": 2,
+            "question": "In a Deep Belief Network, the first layer is trained as an RBM. The second layer is trained using which of the following?",
+            "options": [
+                "Backpropagation",
+                "Contrastive Divergence",
+                "Mean-Field Approximation",
+                "Gibbs Sampling"
+            ],
+            "answer": "Contrastive Divergence",
+            "co": "CO5"
+        },
+        {
+            "qno": 3,
+            "question": "What is the primary advantage of Deep Boltzmann Machines over Restricted Boltzmann Machines?",
+            "options": [
+                "Lower memory requirements",
+                "Ability to model deep hierarchical representations",
+                "Faster training speed",
+                "Lower computational complexity"
+            ],
+            "answer": "Ability to model deep hierarchical representations",
+            "co": "CO5"
+        },
+        {
+            "qno": 4,
+            "question": "In a Boltzmann Machine, the probability of a state configuration is computed using which function?",
+            "options": [
+                "Softmax",
+                "Sigmoid",
+                "Energy Function",
+                "Entropy Function"
+            ],
+            "answer": "Energy Function",
+            "co": "CO5"
+        },
+        {
+            "qno": 5,
+            "question": "If a Convolutional Boltzmann Machine has a kernel size of 3x3 and an input of 28x28, how many convolutional weight parameters are required per feature map?",
+            "options": [
+                "81",
+                "9",
+                "27",
+                "243"
+            ],
+            "answer": "9",
+            "co": "CO5"
+        },
+        {
+            "qno": 6,
+            "question": "In a Boltzmann Machine, what happens when the learning rate is too high?",
+            "options": [
+                "Model converges faster",
+                "Model fails to converge",
+                "Model generalizes better",
+                "Model requires more hidden units"
+            ],
+            "answer": "Model fails to converge",
+            "co": "CO5"
+        },
+        {
+            "qno": 7,
+            "question": "A Deep Belief Network is composed of multiple layers of which type of model?",
+            "options": [
+                "Autoencoders",
+                "Convolutional Neural Networks",
+                "Restricted Boltzmann Machines",
+                "Support Vector Machines"
+            ],
+            "answer": "Restricted Boltzmann Machines",
+            "co": "CO5"
+        },
+        {
+            "qno": 8,
+            "question": "The process of updating weights in a Restricted Boltzmann Machine is governed by which algorithm?",
+            "options": [
+                "Adam Optimizer",
+                "Backpropagation",
+                "Contrastive Divergence",
+                "Newton-Raphson"
+            ],
+            "answer": "Contrastive Divergence",
+            "co": "CO5"
+        },
+        {
+            "qno": 9,
+            "question": "If a Deep Boltzmann Machine consists of 3 layers with 128, 64, and 32 hidden units, respectively, how many hidden-to-hidden weight parameters exist?",
+            "options": [
+                "8192",
+                "2176",
+                "4096",
+                "1024"
+            ],
+            "answer": "8192",
+            "co": "CO5"
+        },
+        {
+            "qno": 10,
+            "question": "In a Directed Generative Network, how is the data generation process structured?",
+            "options": [
+                "Bottom-up only",
+                "Top-down only",
+                "Top-down and bottom-up",
+                "Randomly connected layers"
+            ],
+            "answer": "Top-down only",
+            "co": "CO5"
+        },
+        {
+            "qno": 11,
+            "question": "Which of the following methods is commonly used to sample from a Boltzmann Machine?",
+            "options": [
+                "Monte Carlo Sampling",
+                "Variational Autoencoders",
+                "Principal Component Analysis",
+                "Singular Value Decomposition"
+            ],
+            "answer": "Monte Carlo Sampling",
+            "co": "CO5"
+        },
+        {
+            "qno": 12,
+            "question": "The loss function for a Boltzmann Machine is derived from which concept?",
+            "options": [
+                "Entropy Maximization",
+                "Energy Minimization",
+                "Likelihood Estimation",
+                "Variance Reduction"
+            ],
+            "answer": "Energy Minimization",
+            "co": "CO5"
+        },
+        {
+            "qno": 13,
+            "question": "A Boltzmann Machine with 200 visible units and 50 hidden units uses how many bias parameters?",
+            "options": [
+                "50",
+                "200",
+                "250",
+                "10000"
+            ],
+            "answer": "250",
+            "co": "CO5"
+        },
+        {
+            "qno": 14,
+            "question": "What is a key characteristic of Deep Boltzmann Machines that differentiates them from Deep Belief Networks?",
+            "options": [
+                "Fully connected layers",
+                "Bidirectional connections between layers",
+                "Greedy layer-wise training",
+                "Uses supervised learning"
+            ],
+            "answer": "Bidirectional connections between layers",
+            "co": "CO5"
+        },
+        {
+            "qno": 15,
+            "question": "The free energy in a Boltzmann Machine is used for which purpose?",
+            "options": [
+                "Optimizing hidden layers",
+                "Calculating model likelihood",
+                "Reducing variance",
+                "Generating synthetic data"
+            ],
+            "answer": "Calculating model likelihood",
+            "co": "CO5"
+        },
+        {
+            "qno": 16,
+            "question": "Which of the following statements is true about Contrastive Divergence?",
+            "options": [
+                "It requires computing the exact gradient",
+                "It uses Gibbs Sampling to approximate gradients",
+                "It is slower than standard gradient descent",
+                "It is used only for Convolutional Networks"
+            ],
+            "answer": "It uses Gibbs Sampling to approximate gradients",
+            "co": "CO5"
+        },
+        {
+            "qno": 17,
+            "question": "The energy function of a Restricted Boltzmann Machine contains which terms?",
+            "options": [
+                "Bias terms only",
+                "Weight and activation terms",
+                "Bias and weight terms",
+                "Weight terms only"
+            ],
+            "answer": "Bias and weight terms",
+            "co": "CO5"
+        },
+        {
+            "qno": 18,
+            "question": "Which property allows Convolutional Boltzmann Machines to handle spatially correlated data better than traditional RBMs?",
+            "options": [
+                "Fully connected layers",
+                "Local receptive fields",
+                "Feature stacking",
+                "Sparse activations"
+            ],
+            "answer": "Local receptive fields",
+            "co": "CO5"
+        },
+        {
+            "qno": 19,
+            "question": "A Boltzmann Machine trained on a dataset has 400 visible units and 100 hidden units. How many total connections exist?",
+            "options": [
+                "40000",
+                "50000",
+                "10000",
+                "4000"
+            ],
+            "answer": "40000",
+            "co": "CO5"
+        },
+        {
+            "qno": 20,
+            "question": "What is a major drawback of standard Boltzmann Machines compared to Restricted Boltzmann Machines?",
+            "options": [
+                "Slower training due to fully connected layers",
+                "Higher accuracy",
+                "Increased interpretability",
+                "Better generalization"
+            ],
+            "answer": "Slower training due to fully connected layers",
+            "co": "CO5"
+        },
+        {
+            "qno": 21,
+            "question": "When evaluating generative models, which metric is commonly used to measure the quality of generated samples?",
+            "options": [
+                "Cross-Entropy Loss",
+                "Structural Similarity Index",
+                "Inception Score",
+                "Mean Squared Error"
+            ],
+            "answer": "Inception Score",
+            "co": "CO5"
+        },
+        {
+            "qno": 22,
+            "question": "A Deep Boltzmann Machine has 3 layers with 256, 128, and 64 hidden units. How many weight parameters exist between the first and second layers?",
+            "options": [
+                "16384",
+                "8192",
+                "32768",
+                "65536"
+            ],
+            "answer": "32768",
+            "co": "CO5"
+        },
+        {
+            "qno": 23,
+            "question": "The partition function in a Boltzmann Machine is used for which purpose?",
+            "options": [
+                "Normalizing probability distributions",
+                "Reducing overfitting",
+                "Minimizing loss",
+                "Maximizing entropy"
+            ],
+            "answer": "Normalizing probability distributions",
+            "co": "CO5"
+        },
+        {
+            "qno": 24,
+            "question": "What is the main role of the hidden units in a Boltzmann Machine?",
+            "options": [
+                "Reduce computational complexity",
+                "Extract higher-order features",
+                "Store probability distributions",
+                "Compute backpropagation gradients"
+            ],
+            "answer": "Extract higher-order features",
+            "co": "CO5"
+        },
+        {
+            "qno": 25,
+            "question": "If a Boltzmann Machine has 300 visible units and 50 hidden units, how many trainable parameters exist in the weight matrix?",
+            "options": [
+                "15000",
+                "350",
+                "5000",
+                "7500"
+            ],
+            "answer": "15000",
+            "co": "CO5"
+        },
+        {
+            "qno": 26,
+            "question": "Compute the rank of a factor loading matrix in a factor analysis model with 12 observed variables and 4 latent factors.",
+            "options": [
+                "4",
+                "6",
+                "8",
+                "12"
+            ],
+            "answer": "4",
+            "co": "CO5"
+        },
+        {
+            "qno": 27,
+            "question": "Compute the determinant of a covariance matrix in ICA where eigenvalues are 2, 4, and 8.",
+            "options": [
+                "64",
+                "14",
+                "20",
+                "32"
+            ],
+            "answer": "64",
+            "co": "CO5"
+        },
+        {
+            "qno": 28,
+            "question": "In PCA, if the first 3 principal components capture 85% of variance in 10D data, what fraction of variance is lost?",
+            "options": [
+                "0.15",
+                "0.25",
+                "0.35",
+                "0.5"
+            ],
+            "answer": "0.15",
+            "co": "CO5"
+        },
+        {
+            "qno": 29,
+            "question": "Compute the trace of the covariance matrix of a dataset where variance along dimensions is [3, 5, 2, 7].",
+            "options": [
+                "14",
+                "17",
+                "10",
+                "12"
+            ],
+            "answer": "17",
+            "co": "CO5"
+        },
+        {
+            "qno": 30,
+            "question": "Compute the total number of independent parameters in a Bayesian network with 6 nodes and 4 directed edges.",
+            "options": [
+                "10",
+                "12",
+                "14",
+                "16"
+            ],
+            "answer": "12",
+            "co": "CO5"
+        },
+        {
+            "qno": 31,
+            "question": "Compute the entropy of a Gaussian variable with variance 5.",
+            "options": [
+                "2.74",
+                "3.04",
+                "3.21",
+                "2.98"
+            ],
+            "answer": "3.04",
+            "co": "CO5"
+        },
+        {
+            "qno": 32,
+            "question": "Compute the determinant of an adjacency matrix for a graphical model with eigenvalues [2, 3, 4].",
+            "options": [
+                "18",
+                "20",
+                "24",
+                "27"
+            ],
+            "answer": "24",
+            "co": "CO5"
+        },
+        {
+            "qno": 33,
+            "question": "Compute the KL divergence between two Gaussian distributions with variances 3 and 6.",
+            "options": [
+                "0.22",
+                "0.31",
+                "0.48",
+                "0.58"
+            ],
+            "answer": "0.31",
+            "co": "CO5"
+        },
+        {
+            "qno": 34,
+            "question": "Compute the L1 norm of a sparse coding solution with values [3, -1, 0, 5, -2].",
+            "options": [
+                "11",
+                "10",
+                "9",
+                "8"
+            ],
+            "answer": "11",
+            "co": "CO5"
+        },
+        {
+            "qno": 35,
+            "question": "Compute the rank of a covariance matrix in a PCA model where 4 components explain all the variance of a 7D dataset.",
+            "options": [
+                "4",
+                "5",
+                "6",
+                "7"
+            ],
+            "answer": "4",
+            "co": "CO5"
+        },
+        {
+            "qno": 36,
+            "question": "Compute the number of edges in a tree-structured graphical model with 9 nodes.",
+            "options": [
+                "7",
+                "8",
+                "9",
+                "10"
+            ],
+            "answer": "8",
+            "co": "CO5"
+        },
+        {
+            "qno": 37,
+            "question": "Compute the steady-state probability of a Markov chain with two states and transition matrix [[0.6, 0.4], [0.5, 0.5]].",
+            "options": [
+                "0.45",
+                "0.5",
+                "0.55",
+                "0.6"
+            ],
+            "answer": "0.55",
+            "co": "CO5"
+        },
+        {
+            "qno": 38,
+            "question": "Compute the number of trainable parameters in an ICA model with 4 observed signals and 3 independent sources.",
+            "options": [
+                "10",
+                "12",
+                "14",
+                "16"
+            ],
+            "answer": "12",
+            "co": "CO5"
+        },
+        {
+            "qno": 39,
+            "question": "Compute the whitening transformation matrix for PCA if the eigenvalues are 1, 4, and 9.",
+            "options": [
+                "1, 0.5, 0.33",
+                "0.33, 0.5, 1",
+                "1, 0.25, 0.33",
+                "0.5, 1, 0.33"
+            ],
+            "answer": "1, 0.5, 0.33",
+            "co": "CO5"
+        },
+        {
+            "qno": 40,
+            "question": "Compute the determinant of a structured graphical model’s adjacency matrix if it has eigenvalues 1, 2, and 4.",
+            "options": [
+                "5",
+                "6",
+                "7",
+                "8"
+            ],
+            "answer": "8",
+            "co": "CO5"
+        },
+        {
+            "qno": 41,
+            "question": "Compute the total number of independent parameters in a Gaussian graphical model with 7 variables and a sparse precision matrix with 9 nonzero entries.",
+            "options": [
+                "9",
+                "15",
+                "21",
+                "28"
+            ],
+            "answer": "9",
+            "co": "CO5"
+        },
+        {
+            "qno": 42,
+            "question": "Compute the mutual information between two independent Gaussian variables with variances 3 and 5.",
+            "options": [
+                "0",
+                "0.25",
+                "0.5",
+                "0.75"
+            ],
+            "answer": "0",
+            "co": "CO5"
+        },
+        {
+            "qno": 43,
+            "question": "Compute the entropy of an exponential distribution with mean 3.",
+            "options": [
+                "1.2",
+                "1.5",
+                "1.85",
+                "2.1"
+            ],
+            "answer": "1.85",
+            "co": "CO5"
+        },
+        {
+            "qno": 44,
+            "question": "Compute the minimum number of edges in a Bayesian network with 7 nodes to ensure full connectivity.",
+            "options": [
+                "5",
+                "6",
+                "7",
+                "8"
+            ],
+            "answer": "6",
+            "co": "CO5"
+        },
+        {
+            "qno": 45,
+            "question": "Compute the rank of the adjacency matrix of a fully connected undirected graphical model with 5 nodes.",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "answer": "3",
+            "co": "CO5"
+        },
+        {
+            "qno": 46,
+            "question": "Compute the optimal sparse representation in a dictionary learning problem with a sparsity constraint of 3 given an overcomplete dictionary with 7 basis vectors.",
+            "options": [
+                "2",
+                "3",
+                "4",
+                "5"
+            ],
+            "answer": "3",
+            "co": "CO5"
+        },
+        {
+            "qno": 47,
+            "question": "Compute the total number of possible spanning trees in a graphical model with 6 nodes.",
+            "options": [
+                "50",
+                "120",
+                "200",
+                "300"
+            ],
+            "answer": "200",
+            "co": "CO5"
+        },
+        {
+            "qno": 48,
+            "question": "Compute the number of independent parameters in a covariance matrix for a factor analysis model with 9 observed variables.",
+            "options": [
+                "36",
+                "45",
+                "72",
+                "81"
+            ],
+            "answer": "45",
+            "co": "CO5"
+        },
+        {
+            "qno": 49,
+            "question": "Compute the total number of trainable parameters in a Markov random field with 5 nodes and pairwise dependencies.",
+            "options": [
+                "5",
+                "7",
+                "10",
+                "12"
+            ],
+            "answer": "10",
+            "co": "CO5"
+        },
+        {
+            "qno": 50,
+            "question": "A banking fraud detection system finds TP = 210, FP = 60, FN = 30, TN = 230. Compute F1-score when the detection is performed using SVM using a 1D feature vector with value 1x1x1000.",
+            "options": [
+                "0.79",
+                "0.82",
+                "0.85",
+                "0.88"
+            ],
+            "answer": "0.82",
+            "co": "CO5"
+        }
+    ]
+}

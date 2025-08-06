@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic MCQ Questions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="brand-icon">📚</div>
+                <div class="brand-text">
+                    <h1 class="brand-title">Deep Learning</h1>
+                    <p class="brand-subtitle">MCQ Practice Questions</p>
+                </div>
+            </div>
+            <div class="nav-info">
+                <div class="session-info">
+                    <span class="session-label">MCQ Questions</span>
+                    <span class="session-status">Practice Mode</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Course Information Panel -->
+            <div class="course-info-panel">
+                <div class="course-header">
+                    <h2 class="course-title">CSA47 - Deep Learning</h2>
+                    <p class="course-description">Select a Course Outcome to begin Practice Questions. Each session contains carefully curated questions to test your understanding.</p>
+                </div>
+                <div class="assessment-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" id="total-questions">0</span>
+                        <span class="stat-label">Total Questions</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="current-co">CO1</span>
+                        <span class="stat-label">Selected Outcome</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50</span>
+                        <span class="stat-label">Questions Limit</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CO Selection -->
+            <div class="co-selector-panel">
+                <div class="selector-header">
+                    <h3 class="selector-title">Course Outcome Selection</h3>
+                    <p class="selector-description">Choose the Unit you want to practice</p>
+                </div>
+                <div class="co-selector-container">
+                    <label for="co-select" class="co-label">Select Course Outcome (CO)</label>
+                    <div class="select-wrapper">
+                        <select id="co-select" class="co-select">
+                            <option value="CO1" selected>CO1</option>
+                            <option value="CO2">CO2</option>
+                            <option value="CO3">CO3</option>
+                            <option value="CO4">CO4</option>
+                            <option value="CO5">CO5</option>
+                        </select>
+                        <div class="select-arrow">▼</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Loading State -->
+            <div id="loading" class="loading">
+                <div class="loading-content">
+                    <div class="loading-spinner"></div>
+                    <h3 class="loading-title">Preparing Assessment</h3>
+                    <p class="loading-text">Loading questions from database...</p>
+                </div>
+            </div>
+
+            <!-- Error State -->
+            <div id="error" class="error hidden">
+                <div class="error-content">
+                    <div class="error-icon">⚠️</div>
+                    <h3 class="error-title">Questions Unavailable</h3>
+                    <p class="error-text">Unable to load questions. Please ensure the MCQ database is accessible and try again.</p>
+                    <button class="retry-btn" onclick="location.reload()">Retry Again</button>
+                </div>
+            </div>
+
+            <!-- Questions Container -->
+            <div id="questions-container" class="questions-container hidden">
+                <div class="questions-header">
+                    <div class="questions-title-section">
+                        <h2 id="questions-title" class="questions-title">MCQ Questions</h2>
+                        <div class="questions-meta">
+                            <span id="questions-count" class="questions-count">Loading questions...</span>
+                            <span class="difficulty-indicator">Deep Learning</span>
+                        </div>
+                    </div>
+                    <div class="assessment-instructions">
+                        <h4>Instructions:</h4>
+                        <ul>
+                            <li>Read each question carefully and practice</li>
+                            <li>Click "Reveal Answer" to see the correct solution</li>
+                            <li>Use this practice session to identify knowledge gaps</li>
+                            <li>All the Best</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="questions-list" class="questions-list"></div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            
+            <div class="footer-section">
+                
+                <p>Designed by <a href="https://www.jayanth.site" target="_blank" rel="noopener noreferrer">Donavalli Jayanth</a></p>
+            </div>
+            <!-- <div class="footer-section">
+                <h4>Version</h4>
+                <p>EduAssess v2.0 - Academic Edition</p>
+            </div> -->
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Deep Learning</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
