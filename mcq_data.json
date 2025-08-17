@@ -1,1372 +1,2229 @@
 {
+    "General": [
+      {
+        "question_no": "",
+        "question": "While using the Newton-Raphson method to solve f(x) = x³ – 4x + 1, the derivative is f′(x) = 3x² – 4. Starting from x₀ = 2, compute x₁.",
+        "options": [],
+        "answer": "x1=x0−f(x0)f′(x0)=2−(8−8+1)(12−4)=2−18=1.875x_1 = x_0 - \\frac{f(x_0)}{f'(x_0)} = 2 - \\frac{(8 - 8 + 1)}{(12 - 4)} = 2 - \\frac{1}{8} = 1.875x1​=x0​−f′(x0​)f(x0​)​=2−(12−4)(8−8+1)​=2−81​=1.875"
+      },
+      {
+        "question_no": "",
+        "question": "A neural network has 10 hidden layers and uses sigmoid activation. During training, the gradients of weights in earlier layers become almost zero. What is this phenomenon called?",
+        "options": [],
+        "answer": "Vanishing Gradient Problem"
+      },
+      {
+        "question_no": "",
+        "question": "Consider a stochastic gradient descent optimizer with a learning rate of 0.01. If the gradient for a parameter is 0.3, and the current parameter value is 2.0, what will be the new parameter value?",
+        "options": [],
+        "answer": "New value = 2.0 - 0.01 × 0.3 = 1.997"
+      },
+      {
+        "question_no": "",
+        "question": "In an unsupervised learning scenario, a user applies PCA followed by K-means clustering. Why is PCA applied before clustering?",
+        "options": [],
+        "answer": "To reduce dimensionality and remove noise, improving clustering performance."
+      },
+      {
+        "question_no": "",
+        "question": "A binary classifier outputs the following confusion matrix: TP=40, FP=10, FN=5, TN=45. What is the F1-score?",
+        "options": [],
+        "answer": "Precision = 40 / (40 + 10) = 0.8\nRecall = 40 / (40 + 5) = 0.8889\nF1 = 2 × (0.8 × 0.8889) / (0.8 + 0.8889) ≈ 0.842"
+      },
+      {
+        "question_no": "",
+        "question": "A researcher trains a model and computes log-loss for binary classification. If the predicted probability for class 1 is 0.8 and the true label is 1, what is the log-loss for that sample?",
+        "options": [],
+        "answer": "Log-loss = -log(0.8) ≈ 0.223"
+      },
+      {
+        "question_no": "",
+        "question": "A data scientist applies a learning algorithm to a training dataset, but the model shows consistently high error on both the training and test sets. The features appear relevant and sufficient in number. What is the most likely cause and suitable remedy?",
+        "options": [],
+        "answer": "Cause: Underfitting. Remedy: Use a more complex model."
+      },
+      {
+        "question_no": "",
+        "question": "You are training a model with a validation set and notice that changing the random seed leads to slightly different model performance on the validation data. What does this variability most likely reflect?",
+        "options": [],
+        "answer": "Model sensitivity to initialization or data splits."
+      },
+      {
+        "question_no": "",
+        "question": "In a high-dimensional space, a machine learning algorithm performs poorly even after several iterations of optimization. What phenomenon could be responsible for this, and what technique may help?",
+        "options": [],
+        "answer": "Curse of dimensionality; apply dimensionality reduction like PCA."
+      },
+      {
+        "question_no": "",
+        "question": "You are analyzing the convergence behavior of gradient descent. For a quadratic loss function with large curvature differences in different directions, convergence is very slow. What is the most effective strategy to address this?",
+        "options": [],
+        "answer": "Use momentum or adaptive optimizers like Adam."
+      },
+      {
+        "question_no": "",
+        "question": "A researcher trains a classifier using labeled data and evaluates it using cross-validation. The results vary significantly across folds. What is the most appropriate conclusion?",
+        "options": [],
+        "answer": "Model performance is sensitive to data splits; possibly high variance."
+      },
+      {
+        "question_no": "",
+        "question": "You are trying to estimate the posterior distribution of a parameter using Bayesian inference. You have the likelihood function and prior, but the marginal likelihood is computationally intractable. What method can be used to approximate the posterior?",
+        "options": [],
+        "answer": "Use Markov Chain Monte Carlo (MCMC) methods."
+      },
+      {
+        "question_no": "",
+        "question": "While using gradient descent to train a deep neural network, you notice the gradients become extremely small for layers closer to the input. Which of the following best explains this observation?",
+        "options": [],
+        "answer": "Vanishing gradient due to deep architecture and activation functions."
+      },
+      {
+        "question_no": "",
+        "question": "An analyst uses the entropy formula to measure uncertainty in a system with a uniform distribution across 4 classes. What is the entropy in bits for this system?",
+        "options": [],
+        "answer": "Entropy = -∑(1/4 * log2(1/4)) = 2 bits"
+      },
+      {
+        "question_no": "",
+        "question": "A machine learning engineer is evaluating a binary classifier using ROC curves. The curve is close to the diagonal line. What does this indicate about the model?",
+        "options": [],
+        "answer": "Model performs no better than random guessing."
+      },
+      {
+        "question_no": "",
+        "question": "You are optimizing a model using mini-batch stochastic gradient descent. If the mini-batch size is too small, what trade-off are you likely to encounter?",
+        "options": [],
+        "answer": "Higher noise in gradient estimates leading to unstable convergence."
+      },
+      {
+        "question_no": "",
+        "question": "You are training a neural network on a dataset with a large number of categorical features. The model takes longer to train and performs poorly. What is the most suitable preprocessing step to handle this issue?",
+        "options": [],
+        "answer": "Use embedding layers or one-hot encoding with feature selection."
+      },
+      {
+        "question_no": "",
+        "question": "A data analyst is evaluating the performance of two classifiers on the same dataset. Classifier A has high variance across folds during cross-validation, while Classifier B has consistent but lower accuracy. Which statement is most likely true?",
+        "options": [],
+        "answer": "Classifier A is overfitting; Classifier B is more stable but underfitting."
+      },
+      {
+        "question_no": "",
+        "question": "In a large-scale online learning scenario, the data is arriving continuously in real-time. Which learning paradigm is most suitable for adapting the model to new incoming data?",
+        "options": [],
+        "answer": "Online Learning / Incremental Learning"
+      },
+      {
+        "question_no": "",
+        "question": "While training a neural network, you apply batch normalization after each layer. What is the primary purpose of this technique in the context of deep learning?",
+        "options": [],
+        "answer": "To stabilize and accelerate training by normalizing activations."
+      },
+      {
+        "question_no": "",
+        "question": "A practitioner uses ReLU as the activation function for a deep network. However, during training, a significant number of neurons output zero for all inputs. What is the likely cause and how can it be mitigated?",
+        "options": [],
+        "answer": "Cause: Dying ReLU problem. Mitigation: Use Leaky ReLU or ELU."
+      },
+      {
+        "question_no": "",
+        "question": "A machine learning model shows extremely high accuracy on training data but fails to generalize on test data. Which approach is most suitable to improve generalization?",
+        "options": [],
+        "answer": "Use regularization or gather more diverse training data."
+      },
+      {
+        "question_no": "",
+        "question": "In a regression task, the model gives predictions consistently lower than actual values. The residuals are not centered around zero. What does this suggest about the model's performance?",
+        "options": [],
+        "answer": "The model is biased; underestimating the target values."
+      },
+      {
+        "question_no": "",
+        "question": "You are working on a classification task where the input features are on vastly different scales. Which preprocessing technique should be applied before training a gradient-based algorithm like logistic regression?",
+        "options": [],
+        "answer": "Feature scaling (e.g., standardization or normalization)"
+      },
+      {
+        "question_no": "",
+        "question": "A probabilistic model is used to predict the class label of instances. The model outputs a posterior probability of 0.8 for class A. What does this value represent?",
+        "options": [],
+        "answer": "There is an 80% confidence that the instance belongs to class A."
+      },
+      {
+        "question_no": "",
+        "question": "You are applying k-means clustering and notice that results differ between runs. You decide to run the algorithm multiple times and choose the best clustering based on the lowest inertia. What is inertia in this context?",
+        "options": [],
+        "answer": "The sum of squared distances of samples to their nearest cluster center. MCQs with Answers (51 to 70)"
+      },
+      {
+        "question_no": "",
+        "question": "A fully connected feedforward network has an input of 16 features, one hidden layer of 10 neurons with ReLU activation, and one output neuron with linear activation. How many trainable parameters are there in total, including biases?",
+        "options": [
+          "A. 160",
+          "B. 181",
+          "C. 170",
+          "D. 190"
+        ],
+        "answer": "B. 181"
+      },
+      {
+        "question_no": "",
+        "question": "A convolutional layer with 32 filters of size 3×3 is applied to a 64×64 input image with stride 1 and padding 1. What is the total number of parameters (excluding biases)?",
+        "options": [
+          "A. 288",
+          "B. 512",
+          "C. 864",
+          "D. 9216"
+        ],
+        "answer": "C. 864"
+      },
+      {
+        "question_no": "",
+        "question": "During backpropagation, a gradient ∂L/∂w = -0.25 is calculated for a weight w = 0.8. Using gradient descent with a learning rate of 0.01, what is the new weight value?",
+        "options": [
+          "A. 0.8025",
+          "B. 0.7975",
+          "C. 0.75",
+          "D. 0.825"
+        ],
+        "answer": "A. 0.8025"
+      },
+      {
+        "question_no": "",
+        "question": "In a convolutional neural network, you apply a 3×3 filter to a 32×32 image with padding 0 and stride 2. What is the size of the resulting feature map?",
+        "options": [
+          "A. 15×15",
+          "B. 30×30",
+          "C. 16×16",
+          "D. 32×32"
+        ],
+        "answer": "C. 16×16"
+      },
+      {
+        "question_no": "",
+        "question": "A deep neural network is trained using the Adam optimizer with β1 = 0.9, β2 = 0.999. If the gradient is 0.04 and moment estimates are m = 0.036, v = 0.0002, and the learning rate is 0.001, what is the update value?",
+        "options": [
+          "A. 0.008",
+          "B. 0.003",
+          "C. 0.00254",
+          "D. 0.001"
+        ],
+        "answer": "C. 0.00254"
+      },
+      {
+        "question_no": "",
+        "question": "For a neural network trained with L2 regularization and λ = 0.05, what additional penalty term is added to the loss function if the weights are [0.4, -0.3, 0.5]?",
+        "options": [
+          "A. 0.0155",
+          "B. 0.025",
+          "C. 0.035",
+          "D. 0.045"
+        ],
+        "answer": "A. 0.0155"
+      },
+      {
+        "question_no": "",
+        "question": "An input volume of size 28×28×3 is passed through a convolutional layer with 16 filters of size 3×3, stride 1, and padding 1. What is the output volume size?",
+        "options": [
+          "A. 28×28×16",
+          "B. 26×26×16",
+          "C. 30×30×16",
+          "D. 28×28×3"
+        ],
+        "answer": "A. 28×28×16"
+      },
+      {
+        "question_no": "",
+        "question": "You use dropout regularization with a rate of 0.4 in a hidden layer of 250 neurons. How many neurons are expected to be active in each forward pass during training?",
+        "options": [
+          "A. 250",
+          "B. 150",
+          "C. 100",
+          "D. 200"
+        ],
+        "answer": "B. 150"
+      },
+      {
+        "question_no": "",
+        "question": "A network trained on a dataset shows high accuracy on training data but poor accuracy on test data. Which change would most likely help?",
+        "options": [
+          "A. Increase learning rate",
+          "B. Use smaller batch size",
+          "C. Apply regularization",
+          "D. Add more layers"
+        ],
+        "answer": "C. Apply regularization"
+      },
+      {
+        "question_no": "",
+        "question": "In a training step, if the loss is L = (ŷ - y)² with ŷ = w•x and y = 0.5, w = 0.6, x = 1, compute ∂L/∂w",
+        "options": [
+          "A. 0.2",
+          "B. -0.4",
+          "C. 0.1",
+          "D. 0.4"
+        ],
+        "answer": "D. 0.4"
+      },
+      {
+        "question_no": "",
+        "question": "Given a deep feedforward network with sigmoid activation, the input to a layer is very large in magnitude. What is the likely result during backpropagation?",
+        "options": [
+          "A. Exploding gradients",
+          "B. Gradient clipping",
+          "C. Vanishing gradients",
+          "D. Constant output"
+        ],
+        "answer": "C. Vanishing gradients"
+      },
+      {
+        "question_no": "",
+        "question": "In a CNN, what is the output size of a 128×128 input after two consecutive 2×2 max pooling layers with stride 2?",
+        "options": [
+          "A. 64×64",
+          "B. 32×32",
+          "C. 128×128",
+          "D. 16×16"
+        ],
+        "answer": "B. 32×32"
+      },
+      {
+        "question_no": "",
+        "question": "A weight matrix of shape (10×5) is initialized using Xavier initialization. What is the variance of the weights under Xavier uniform initialization?",
+        "options": [
+          "A. 1/10",
+          "B. 2/15",
+          "C. 1/5",
+          "D. 1/7.5"
+        ],
+        "answer": "B. 2/15"
+      },
+      {
+        "question_no": "",
+        "question": "A CNN trained on a GPU processes one image in 0.04 seconds. How many images can it process in one hour?",
+        "options": [
+          "A. 3600",
+          "B. 90000",
+          "C. 54000",
+          "D. 12000"
+        ],
+        "answer": "C. 90000"
+      },
+      {
+        "question_no": "",
+        "question": "A deep model trained with dropout at 0.5 rate shows improved test accuracy but reduced training accuracy. What is the most likely reason?",
+        "options": [
+          "A. Underfitting",
+          "B. Overfitting",
+          "C. Noise in data",
+          "D. Gradient vanishing"
+        ],
+        "answer": "A. Underfitting"
+      },
+      {
+        "question_no": "",
+        "question": "A deep feedforward neural network has an input layer with 256 units, followed by hidden layers with 128, 64, and 32 neurons respectively, each with ReLU activation. If there is one output neuron with no activation, how many total trainable parameters are present?",
+        "options": [
+          "A. 32833",
+          "B. 33025",
+          "C. 34000",
+          "D. 32000"
+        ],
+        "answer": "B. 33025"
+      },
+      {
+        "question_no": "",
+        "question": "A 5×5 convolutional filter is applied to a 32×32 input image with stride 1 and no padding. After this, a 2×2 max pooling layer with stride 2 is applied. What is the final output size?",
+        "options": [
+          "A. 28×28",
+          "B. 14×14",
+          "C. 13×13",
+          "D. 16×16"
+        ],
+        "answer": "C. 14×14"
+      },
+      {
+        "question_no": "",
+        "question": "A neural network is trained using mini-batch stochastic gradient descent. The batch size is 32 and the dataset contains 1024 samples. How many parameter update steps occur per epoch?",
+        "options": [
+          "A. 32",
+          "B. 64",
+          "C. 16",
+          "D. 128"
+        ],
+        "answer": "C. 32"
+      },
+      {
+        "question_no": "",
+        "question": "While training a deep network using sigmoid activation, it is observed that gradient values become increasingly small in deeper layers. What issue is most likely occurring?",
+        "options": [
+          "A. Exploding gradient",
+          "B. Saddle point",
+          "C. Vanishing gradient",
+          "D. Overfitting"
+        ],
+        "answer": "C. Vanishing gradient"
+      },
+      {
+        "question_no": "",
+        "question": "If L2 regularization with λ = 0.1 is applied to a weight vector w = [0.2, -0.4, 0.6], what is the total penalty term added to the loss?",
+        "options": [
+          "A. 0.28",
+          "B. 0.026",
+          "C. 0.014",
+          "D. 0.056"
+        ],
+        "answer": "B. 0.026"
+      },
+      {
+        "question_no": "",
+        "question": "A hidden layer in a deep network outputs a matrix of shape (64, 100). If batch normalization is applied after this layer, how many trainable parameters does the batch normalization layer introduce? ",
+        "options": [],
+        "answer": "200"
+      },
+      {
+        "question_no": "",
+        "question": "A neuron using the tanh activation function has an output value of 0.8. What is the value of its derivative at this output?",
+        "options": [],
+        "answer": "0.36"
+      },
+      {
+        "question_no": "",
+        "question": "Xavier initialization is used to initialize weights in a layer with 256 inputs and 128 outputs. What is the standard deviation of the initialized weights under Xavier uniform distribution? ",
+        "options": [],
+        "answer": "√(1/384)"
+      },
+      {
+        "question_no": "",
+        "question": "A learning rate schedule uses exponential decay every 10 epochs with decay rate 0.96. If the initial learning rate is 0.01, what is it after 30 epochs?  ",
+        "options": [],
+        "answer": "0.0089"
+      },
+      {
+        "question_no": "",
+        "question": "A convolutional layer contains 64 filters of size 5×5, applied to an input with depth 3. Including one bias per filter, how many trainable parameters does this layer have?",
+        "options": [],
+        "answer": "4864"
+      },
+      {
+        "question_no": "",
+        "question": "A deep network with 4 hidden layers is trained on a dataset with significant label noise. Which regularization technique is most effective in improving generalization in such a case?.",
+        "options": [],
+        "answer": " Dropout"
+      },
+      {
+        "question_no": "",
+        "question": "In a CNN architecture, you apply a 7×7 kernel on an image of size 224×224 with stride 2 and padding 3. What is the output size after this layer?",
+        "options": [],
+        "answer": "112×112"
+      },
+      {
+        "question_no": "",
+        "question": "A training set has 50,000 samples. Using a batch size of 250 and training for 20 epochs, how many total parameter update steps are performed?",
+        "options": [],
+        "answer": "4000"
+      },
+      {
+        "question_no": "",
+        "question": "In a backpropagation pass, the loss gradient w.r.t. weights in a layer is 0.001. If learning rate is 0.1, what is the update applied to the weights?",
+        "options": [],
+        "answer": "0.0001"
+      },
+      {
+        "question_no": "",
+        "question": "A convolutional layer with 32 filters of size 3×3 is applied on an input of depth 64. What is the number of parameters in this layer (including bias)?",
+        "options": [],
+        "answer": "18464"
+      },
+      {
+        "question_no": "",
+        "question": "A deep feedforward network uses 4 hidden layers with 100 neurons each and a sigmoid activation function. During training, the output gradient becomes nearly zero. What adjustment is most likely to improve gradient flow? ",
+        "options": [],
+        "answer": "Switch to ReLU activations"
+      },
+      {
+        "question_no": "",
+        "question": "A convolutional layer has 128 filters, each of size 3×3, applied to an input of shape (32, 32, 64). What is the total number of trainable parameters in this layer (including biases)?",
+        "options": [],
+        "answer": "73856"
+      },
+      {
+        "question_no": "",
+        "question": "A mini-batch of 32 samples is passed through a network layer producing an output shape of (32, 50). If dropout with rate 0.3 is applied during training, what is the expected number of active units per batch?",
+        "options": [],
+        "answer": "1120"
+      },
+      {
+        "question_no": "",
+        "question": "A deep network trained with SGD shows very slow convergence. Switching to the Adam optimizer significantly improves training speed. Which property of Adam helps most in this case?",
+        "options": [],
+        "answer": "Adaptive learning rate per parameter"
+      },
+      {
+        "question_no": "",
+        "question": "A model with 5 million parameters trains for 20 epochs, taking 2 hours per epoch. Due to overfitting, you apply early stopping after 8 epochs. How much training time is saved in hours? . ",
+        "options": [],
+        "answer": "24"
+      },
+      {
+        "question_no": "",
+        "question": "A convolutional neural network contains two convolutional layers, both using 3×3 filters with stride 1 and padding 1. If the input is 64×64, what is the output size after these layers (no pooling)?",
+        "options": [],
+        "answer": "64x64"
+      },
+      {
+        "question_no": "",
+        "question": "During backpropagation, the derivative of the ReLU activation for a negative input is:",
+        "options": [],
+        "answer": "0"
+      },
+      {
+        "question_no": "",
+        "question": "In a training schedule, the learning rate starts at 0.01 and is reduced by 10% every 5 epochs. What is the learning rate at epoch 20?  ",
+        "options": [],
+        "answer": "0.0066"
+      },
+      {
+        "question_no": "",
+        "question": "If a network with high variance error is trained using a smaller model with fewer parameters, what is the likely effect?",
+        "options": [],
+        "answer": "Reduced variance"
+      },
+      {
+        "question_no": "",
+        "question": "In convolutional networks, how does increasing filter size from 3×3 to 5×5 generally affect model behavior?",
+        "options": [],
+        "answer": "Increases receptive field"
+      },
+      {
+        "question_no": "",
+        "question": "A convolutional neural network is trained on 64×64 RGB images. The first convolutional layer uses 32 filters of size 5×5 with stride 1 and 'same' padding. How many trainable parameters does this layer have, including biases?",
+        "options": [],
+        "answer": "2432"
+      },
+      {
+        "question_no": "",
+        "question": "A deep neural network is trained using gradient descent with a fixed learning rate. If the loss becomes constant after a few epochs and gradients are small but non-zero, which of the following adjustments is most appropriate?",
+        "options": [],
+        "answer": "Increase learning rate"
+      },
+      {
+        "question_no": "",
+        "question": "A deep feedforward network has 3 hidden layers, each with 100 neurons, and uses dropout with a rate of 0.5. During inference, how does the network handle dropout?",
+        "options": [],
+        "answer": "Does not apply dropout"
+      },
+      {
+        "question_no": "",
+        "question": "A model with 2 convolutional layers followed by a fully connected layer has a training accuracy of 98% but test accuracy of 70%. What is the most appropriate remedy?",
+        "options": [],
+        "answer": "Use L2 regularization"
+      },
+      {
+        "question_no": "",
+        "question": "A 1D convolutional layer has input shape (128, 64) and 16 filters of size 3 with stride 1. What is the output shape if no padding is applied?",
+        "options": [],
+        "answer": "(126, 16)"
+      },
+      {
+        "question_no": "",
+        "question": "A convolutional network is trained using batch normalization after every convolutional layer. What is the impact of batch normalization on the internal covariate shift?",
+        "options": [],
+        "answer": "Reduces it significantly"
+      },
+      {
+        "question_no": "",
+        "question": "The output of a dense layer with ReLU activation is passed to another layer. If 40% of the neurons have zero output, what could be the reason?",
+        "options": [],
+        "answer": "Dead ReLU units"
+      },
+      {
+        "question_no": "",
+        "question": "While applying backpropagation through a convolutional layer with stride 2 and filter size 3, which of the following statements is true about the gradient dimensions compared to the input?",
+        "options": [],
+        "answer": "Half size"
+      },
+      {
+        "question_no": "",
+        "question": "A network with batch size 64 processes each sample in 2 ms. If it trains for 50 epochs over 10,000 samples, what is the total training time in seconds (excluding validation)?",
+        "options": [],
+        "answer": "15625"
+      },
+      {
+        "question_no": "",
+        "question": "A CNN trained on image classification shows poor performance on rotated images. What is the most effective solution without changing architecture?",
+        "options": [],
+        "answer": "Add rotation to data augmentation Check if correct"
+      },
+      {
+        "question_no": "",
+        "question": "A Recurrent Neural Network is used to model sequences of length 30, and each input vector is of size 50. If the hidden layer size is 100, what is the total number of computations per time step (excluding biases)?",
+        "options": [],
+        "answer": "15000"
+      },
+      {
+        "question_no": "",
+        "question": "In training a deep GRU-based sequence model, you observe the training loss decreases slowly despite using Adam optimizer with default parameters. What is the most suitable debugging step? Check gradient clipping",
+        "options": [],
+        "answer": "Check gradient clipping"
+      },
+      {
+        "question_no": "",
+        "question": "An RNN-based language model has an input embedding of 300, a hidden state of 512, and vocabulary size of 10,000. What is the total number of parameters in the output softmax layer?",
+        "options": [],
+        "answer": "5,120,000"
+      },
+      {
+        "question_no": "",
+        "question": "You train an RNN for sentiment analysis using word sequences. On testing, the model fails when sequences have negations (\"not good\"). What modification is most appropriate? Use bidirectional RNN",
+        "options": [],
+        "answer": "Use bidirectional RNN"
+      },
+      {
+        "question_no": "",
+        "question": "A GRU model trained on time-series data performs poorly on long sequences. What change will best address the vanishing gradient problem? Add residual connections",
+        "options": [],
+        "answer": "Add residual connections"
+      },
+      {
+        "question_no": "",
+        "question": "In a multi-class sequence tagging task with imbalanced classes, the accuracy is high but the F1-score is low. What should be modified during training? Apply weighted cross-entropy loss",
+        "options": [],
+        "answer": "Apply weighted cross-entropy loss"
+      },
+      {
+        "question_no": "",
+        "question": "You are using a deep RNN with 4 stacked layers for character-level prediction. During training, you notice exploding gradients. What is the best immediate solution? Apply gradient clipping",
+        "options": [],
+        "answer": "Apply gradient clipping"
+      },
+      {
+        "question_no": "",
+        "question": "A recursive neural network is used for syntactic parsing. If each node combines two 256-dimensional vectors into one, what is the size of the weight matrix W assuming no bias and full linear combination?",
+        "options": [],
+        "answer": "512 × 256"
+      },
+      {
+        "question_no": "",
+        "question": "An RNN model shows good training accuracy but poor test accuracy. Which change is least likely to improve generalization?",
+        "options": [],
+        "answer": "Add update"
+      },
+      {
+        "question_no": "",
+        "question": "In sequence classification, the RNN outputs a hidden state at each time step. Which of the following is most suitable for sentence-level classification?",
+        "options": [],
+        "answer": "hidden state"
+      },
+      {
+        "question_no": "",
+        "question": "You are designing a GRU network for a sequence-to-sequence model. If the input size is 128 and the hidden size is 256, what is the total number of trainable parameters in a single GRU cell?",
+        "options": [],
+        "answer": "394,752"
+      },
+      {
+        "question_no": "",
+        "question": "A bi-directional LSTM model outputs hidden states of size 128 in each direction. What is the dimension of the output after concatenating forward and backward outputs for one time step?",
+        "options": [],
+        "answer": "256"
+      },
+      {
+        "question_no": "",
+        "question": "During sequence modeling, you observe the model performs poorly on long-term dependencies even after increasing hidden size. Which method is most suitable to fix this?",
+        "options": [],
+        "answer": "Replace with LSTM"
+      },
+      {
+        "question_no": "",
+        "question": "A GRU model outputs a sequence of predictions for a batch of 32 sequences, each of length 20, and output dimension 100. What is the shape of the final output tensor?",
+        "options": [],
+        "answer": "(32, 20, 100)"
+      },
+      {
+        "question_no": "",
+        "question": "In debugging a deep RNN, you find gradients become zero after a few time steps. What strategy can help in this case?",
+        "options": [],
+        "answer": "Gradient clipping"
+      },
+      {
+        "question_no": "",
+        "question": "A recursive neural network is applied to a binary tree structure. If each node combines two 300-dimensional vectors and outputs a 300-dimensional result, what is the size of the weight matrix (assuming linear transformation)?",
+        "options": [],
+        "answer": "600 × 300"
+      },
+      {
+        "question_no": "",
+        "question": "In a sequence prediction task, an RNN gives a loss of NaN during training. What is the most probable reason?",
+        "options": [],
+        "answer": "Exploding gradients"
+      },
+      {
+        "question_no": "",
+        "question": "In a time-series forecasting model using LSTM, which of the following is essential to prevent data leakage during validation?",
+        "options": [],
+        "answer": "Use walk-forward validation"
+      },
+      {
+        "question_no": "",
+        "question": "A sequence model is trained using categorical cross-entropy loss. What should be the output layer activation function?",
+        "options": [],
+        "answer": "Softmax"
+      },
+      {
+        "question_no": "",
+        "question": "A bi-directional GRU model gives poor accuracy on sequence tagging tasks. What is the most likely cause if training and validation accuracy are both low?",
+        "options": [],
+        "answer": "Underfitting"
+      },
+      {
+        "question_no": "",
+        "question": "You are training a deep RNN with 5 layers for speech sequence classification. Training accuracy is high, but test accuracy is very low. What is the most effective regularization method in this context?",
+        "options": [],
+        "answer": "Dropout between RNN layers"
+      },
+      {
+        "question_no": "",
+        "question": "An LSTM model trained on sequences of length 50 with a batch size of 64 and hidden size 128 will produce how many hidden states per batch?",
+        "options": [],
+        "answer": "6400"
+      },
+      {
+        "question_no": "",
+        "question": "A recursive neural network processes a binary parse tree with depth 4. How many total combinations (applications of the recursive function) are required for a single example?",
+        "options": [],
+        "answer": "15"
+      },
+      {
+        "question_no": "",
+        "question": "During hyperparameter tuning of an LSTM, which of the following is least likely to significantly affect the model’s ability to learn long-term dependencies?",
+        "options": [],
+        "answer": "Batch size"
+      },
+      {
+        "question_no": "",
+        "question": "In an NLP task using an RNN, the validation perplexity is high and fluctuates across epochs. What should be adjusted first?",
+        "options": [],
+        "answer": "Use learning rate decay"
+      },
+      {
+        "question_no": "",
+        "question": "A bidirectional RNN is used for named entity recognition. The input sequence length is 60, and each hidden unit is 256. What is the shape of the final output per token?",
+        "options": [],
+        "answer": "60 × 512"
+      },
+      {
+        "question_no": "",
+        "question": "In a sequence-to-sequence task, teacher forcing is used during training. What does it involve?",
+        "options": [],
+        "answer": "Feeding the ground truth output as next input"
+      },
+      {
+        "question_no": "",
+        "question": "You are training a GRU network for machine translation. BLEU score is not improving beyond 20. Which change is least likely to help?",
+        "options": [],
+        "answer": "Reduce hidden size"
+      },
+      {
+        "question_no": "",
+        "question": "An LSTM model trained with categorical cross-entropy loss is giving high training accuracy but low F1-score on test data. What is the best next step?",
+        "options": [],
+        "answer": "Use a confusion matrix to analyze predictions"
+      },
+      {
+        "question_no": "",
+        "question": "A deep RNN is initialized with all weights as zero. What is the most likely training outcome?",
+        "options": [],
+        "answer": "No learning due to zero gradients"
+      },
+      {
+        "question_no": "",
+        "question": "A batch of 32 sequences of length 40 is passed through a GRU with hidden size 128. If you use return_sequences=True, what is the shape of the output tensor?",
+        "options": [],
+        "answer": "(32, 40, 128)"
+      },
+      {
+        "question_no": "",
+        "question": "During LSTM training, the model consistently predicts the same class for every sequence. What is the most appropriate diagnostic step?",
+        "options": [],
+        "answer": "Inspect class imbalance in data"
+      },
+      {
+        "question_no": "",
+        "question": "In sequence modeling, which metric is best suited for evaluating model performance in a sequence-to-sequence translation task?",
+        "options": [],
+        "answer": "BLEU score"
+      },
+      {
+        "question_no": "",
+        "question": "You are training an LSTM for music generation. After training, generated sequences quickly become repetitive. Which modification is most effective?",
+        "options": [],
+        "answer": "Use beam search instead of greedy decoding"
+      },
+      {
+        "question_no": "",
+        "question": "For an LSTM layer with input size 100 and hidden size 50, what is the number of trainable parameters?",
+        "options": [],
+        "answer": "30,400"
+      },
+      {
+        "question_no": "",
+        "question": "You are selecting hyperparameters for a GRU-based model. Which parameter, if too large, is most likely to cause overfitting?",
+        "options": [],
+        "answer": "Number of epochs"
+      },
+      {
+        "question_no": "",
+        "question": "In recursive neural networks, a common use-case is.",
+        "options": [],
+        "answer": "Parse tree representation"
+      },
+      {
+        "question_no": "",
+        "question": "When training a deep bidirectional RNN for speech recognition, you observe increased memory usage. What is the most likely cause? Two hidden states per layer",
+        "options": [],
+        "answer": "Two hidden states per layer"
+      },
+      {
+        "question_no": "",
+        "question": "An RNN model trained with truncated BPTT has difficulty learning long-range dependencies. Which solution best addresses this issue?",
+        "options": [],
+        "answer": "Increase sequence truncation length"
+      },
+      {
+        "question_no": "",
+        "question": "In debugging a deep LSTM network, you observe that validation loss is stuck while training loss decreases. What is the most probable fix?",
+        "options": [],
+        "answer": "Increase dropout"
+      },
+      {
+        "question_no": "",
+        "question": "An LSTM receives input sequences of length 30, input dimension 64, and hidden size 128. How many total parameters are needed for a single LSTM layer (ignoring bias)?",
+        "options": [],
+        "answer": "98,304"
+      },
+      {
+        "question_no": "",
+        "question": "You train an RNN for character-level language modeling, but it fails to generate coherent words. What should you modify first?",
+        "options": [],
+        "answer": "Increase embedding dimension"
+      },
+      {
+        "question_no": "",
+        "question": "During debugging, you find that gradient updates explode when training an RNN. What numerical strategy should be implemented?",
+        "options": [],
+        "answer": "Gradient clipping"
+      },
+      {
+        "question_no": "",
+        "question": "A recursive neural network is applied to syntactic parse trees. If each merge combines two 200-dimensional vectors and applies a weight matrix, what is the size of the weight matrix",
+        "options": [],
+        "answer": "400 × 200"
+      },
+      {
+        "question_no": "",
+        "question": "A model using GRU cells has higher training accuracy than validation accuracy. Which technique will likely improve generalization?",
+        "options": [],
+        "answer": "Apply dropout between layers"
+      },
+      {
+        "question_no": "",
+        "question": "In a time-series forecasting task, validation RMSE is high despite good training accuracy. Which of the following is most likely the cause?",
+        "options": [],
+        "answer": "Overfitting to training data"
+      },
+      {
+        "question_no": "",
+        "question": "In sequence classification using an RNN, the number of classes is 5. What should be the shape of the final output layer?",
+        "options": [],
+        "answer": "(batch_size, 5)"
+      },
+      {
+        "question_no": "",
+        "question": "A bi-directional LSTM is followed by a dense layer with softmax activation. Which problem is this most likely solving?",
+        "options": [],
+        "answer": "Named entity recognition"
+      },
+      {
+        "question_no": "",
+        "question": "What is the most suitable metric for evaluating an LSTM-based model in a binary classification sequence task?",
+        "options": [],
+        "answer": ""
+      },
+      {
+        "question_no": "",
+        "question": "A GRU model shows good training accuracy but suffers from high variance in test predictions. Which of the following is a recommended solution?",
+        "options": [],
+        "answer": "pply L2 regularization"
+      }
+    ],
     "Set 1": [
-        {
-            "question_no": "Q1",
-            "question": "Which of the following best defines deep learning?",
-            "options": [
-                "A method for shallow neural networks only",
-                "A subset of machine learning using multiple layers of neural networks",
-                "A rule-based programming technique",
-                "A data visualization method"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q2",
-            "question": "Which is a primary advantage of deep learning over traditional machine learning? a)",
-            "options": [
-                "Requires no data",
-                "Can automatically learn features from raw data",
-                "Works only for small datasets",
-                "Needs no computing resources"
-            ],
-            "answer": "b"
-        },
-        
-        {
-            "question_no": "Q3",
-            "question": "The dot product of two vectors results in",
-            "options": [
-                "A scalar",
-                "A matrix",
-                "A tensor",
-                "Another vector"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q4",
-            "question": "In deep learning, matrix multiplication is primarily used for:",
-            "options": [
-                "Calculating gradients only",
-                "Transforming inputs through weighted sums in neurons",
-                "Reducing overfitting",
-                "Hyperparameter tuning"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q5",
-            "question": "In probability theory, the sum of probabilities for all possible outcomes is:",
-            "options": [
-                "Less than 0",
-                "Exactly 1",
-                "Greater than 1",
-                "Equal to the number of events"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q6",
-            "question": "Entropy in information theory measures:",
-            "options": [
-                "The total probability",
-                "The uncertainty in a distribution",
-                "The correlation between features",
-                "The accuracy of a model"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q7",
-            "question": "Gradient descent is an example of:",
-            "options": [
-                "A numerical optimization method",
-                "A probability distribution",
-                "A matrix factorization technique",
-                "A visualization tool"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q8",
-            "question": "In numerical computation, underflow occurs when:",
-            "options": [
-                "Numbers are too small to be represented accurately",
-                "Numbers are too large to be represented",
-                "The learning rate is too high",
-                "A gradient is exactly zero"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q9",
-            "question": "In supervised learning, the training data contains:",
-            "options": [
-                "Only features",
-                "Features and corresponding labels",
-                "Only labels",
-                "Random noise"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q10",
-            "question": "Overfitting occurs when a model:",
-            "options": [
-                "Performs poorly on both training and test data",
-                "Performs well on training data but poorly on test data",
-                "Performs well on test data only",
-                "Ignores training data"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q11",
-            "question": "Which of the following is a hyperparameter?",
-            "options": [
-                "Weight values",
-                "Learning rate",
-                "Model output",
-                "Loss value"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q12",
-            "question": "The main purpose of a validation set is to:",
-            "options": [
-                "Train the model",
-                "Test the model performance after deployment",
-                "Tune hyperparameters and prevent overfitting",
-                "Store unused data"
-            ],
-            "answer": "c"
-        },
-        {
-            "question_no": "Q13",
-            "question": "High bias in a model generally leads to:",
-            "options": [
-                "Overfitting",
-                "Underfitting",
-                "Low training error",
-                "High variance"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q14",
-            "question": "A model with high variance typically:",
-            "options": [
-                "Performs well on training data but poorly on unseen data",
-                "Performs poorly on both training and test data",
-                "Ignores the training data",
-                "Has no overfitting issues"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q15",
-            "question": "Which of the following is an example of supervised learning?",
-            "options": [
-                "K-means clustering",
-                "Principal Component Analysis",
-                "Logistic Regression",
-                "Autoencoder"
-            ],
-            "answer": "c"
-        },
-        {
-            "question_no": "Q16",
-            "question": "In unsupervised learning, the algorithm:",
-            "options": [
-                "Uses labeled data",
-                "Finds patterns and structures without labels",
-                "Requires a test set only",
-                "Predicts future values directly"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q17",
-            "question": "The “stochastic” in stochastic gradient descent means:",
-            "options": [
-                "Using a random subset of data for each update",
-                "Using the entire dataset for each update",
-                "Randomizing the model architecture",
-                "Stopping training early"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q18",
-            "question": "A common challenge in deep learning is:",
-            "options": [
-                "Abundance of labeled data",
-                "Overfitting due to large model capacity",
-                "No need for GPUs",
-                "Avoidance of non-linear activation functions"
-            ],
-            "answer": "b"
-        }
+      {
+        "question_no": "Q1",
+        "question": "Which of the following best defines deep learning?",
+        "options": [
+          "A method for shallow neural networks only",
+          "A subset of machine learning using multiple layers of neural networks",
+          "A rule-based programming technique",
+          "A data visualization method"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q2",
+        "question": "Which is a primary advantage of deep learning over traditional machine learning? a)",
+        "options": [
+          "Requires no data",
+          "Can automatically learn features from raw data",
+          "Works only for small datasets",
+          "Needs no computing resources"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q3",
+        "question": "The dot product of two vectors results in",
+        "options": [
+          "A scalar",
+          "A matrix",
+          "A tensor",
+          "Another vector"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q4",
+        "question": "In deep learning, matrix multiplication is primarily used for:",
+        "options": [
+          "Calculating gradients only",
+          "Transforming inputs through weighted sums in neurons",
+          "Reducing overfitting",
+          "Hyperparameter tuning"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q5",
+        "question": "In probability theory, the sum of probabilities for all possible outcomes is:",
+        "options": [
+          "Less than 0",
+          "Exactly 1",
+          "Greater than 1",
+          "Equal to the number of events"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q6",
+        "question": "Entropy in information theory measures:",
+        "options": [
+          "The total probability",
+          "The uncertainty in a distribution",
+          "The correlation between features",
+          "The accuracy of a model"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q7",
+        "question": "Gradient descent is an example of:",
+        "options": [
+          "A numerical optimization method",
+          "A probability distribution",
+          "A matrix factorization technique",
+          "A visualization tool"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q8",
+        "question": "In numerical computation, underflow occurs when:",
+        "options": [
+          "Numbers are too small to be represented accurately",
+          "Numbers are too large to be represented",
+          "The learning rate is too high",
+          "A gradient is exactly zero"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q9",
+        "question": "In supervised learning, the training data contains:",
+        "options": [
+          "Only features",
+          "Features and corresponding labels",
+          "Only labels",
+          "Random noise"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q10",
+        "question": "Overfitting occurs when a model:",
+        "options": [
+          "Performs poorly on both training and test data",
+          "Performs well on training data but poorly on test data",
+          "Performs well on test data only",
+          "Ignores training data"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q11",
+        "question": "Which of the following is a hyperparameter?",
+        "options": [
+          "Weight values",
+          "Learning rate",
+          "Model output",
+          "Loss value"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q12",
+        "question": "The main purpose of a validation set is to:",
+        "options": [
+          "Train the model",
+          "Test the model performance after deployment",
+          "Tune hyperparameters and prevent overfitting",
+          "Store unused data"
+        ],
+        "answer": "c"
+      },
+      {
+        "question_no": "Q13",
+        "question": "High bias in a model generally leads to:",
+        "options": [
+          "Overfitting",
+          "Underfitting",
+          "Low training error",
+          "High variance"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q14",
+        "question": "A model with high variance typically:",
+        "options": [
+          "Performs well on training data but poorly on unseen data",
+          "Performs poorly on both training and test data",
+          "Ignores the training data",
+          "Has no overfitting issues"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q15",
+        "question": "Which of the following is an example of supervised learning?",
+        "options": [
+          "K-means clustering",
+          "Principal Component Analysis",
+          "Logistic Regression",
+          "Autoencoder"
+        ],
+        "answer": "c"
+      },
+      {
+        "question_no": "Q16",
+        "question": "In unsupervised learning, the algorithm:",
+        "options": [
+          "Uses labeled data",
+          "Finds patterns and structures without labels",
+          "Requires a test set only",
+          "Predicts future values directly"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q17",
+        "question": "The “stochastic” in stochastic gradient descent means:",
+        "options": [
+          "Using a random subset of data for each update",
+          "Using the entire dataset for each update",
+          "Randomizing the model architecture",
+          "Stopping training early"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q18",
+        "question": "A common challenge in deep learning is:",
+        "options": [
+          "Abundance of labeled data",
+          "Overfitting due to large model capacity",
+          "No need for GPUs",
+          "Avoidance of non-linear activation functions"
+        ],
+        "answer": "b"
+      }
     ],
     "Set 2": [
-        {
-            "question_no": "Q1",
-            "question": "The transpose of a matrix changes:",
-            "options": [
-                "Columns into rows",
-                "Rows into columns",
-                "Both a and b",
-                "Nothing changes"
-            ],
-            "answer": "c"
-        },
-        {
-            "question_no": "Q2",
-            "question": "The identity matrix has:",
-            "options": [
-                "All ones",
-                "Ones on the main diagonal, zeros elsewhere",
-                "All zeros",
-                "Only positive numbers"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q3",
-            "question": "The determinant of a matrix is used to:",
-            "options": [
-                "Check if the matrix is invertible",
-                "Add matrices",
-                "Multiply vectors",
-                "Change matrix shape"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q4",
-            "question": "In deep learning, tensors are:",
-            "options": [
-                "Only scalars",
-                "Multi-dimensional arrays",
-                "Probability functions",
-                "Loss functions"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q5",
-            "question": "Probability values are always between:",
-            "options": [
-                "0 and 10",
-                "-1 and 1",
-                "0 and 1",
-                "-∞ and ∞"
-            ],
-            "answer": "c"
-        },
-        {
-            "question_no": "Q6",
-            "question": "Conditional probability means:",
-            "options": [
-                "Probability of event A given event B",
-                "Probability of both events happening",
-                "Probability without any event",
-                "None of the above"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q7",
-            "question": "Entropy is a measure of:",
-            "options": [
-                "Certainty",
-                "Uncertainty",
-                "Speed",
-                "Accuracy"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q8",
-            "question": "In classification, cross-entropy loss measures:",
-            "options": [
-                "Distance between vectors",
-                "Difference between predicted and actual probability distributions",
-                "Gradient size",
-                "Dataset size"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q9",
-            "question": "Gradient descent is used for:",
-            "options": [
-                "Increasing the loss",
-                "Finding minimum of a function",
-                "Sorting data",
-                "Increasing learning rate"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q10",
-            "question": "Overflow in computation happens when:",
-            "options": [
-                "Number is too small",
-                "Number is too large to represent",
-                "Learning rate is small",
-                "Memory is empty"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q11",
-            "question": "Numerical instability in deep learning can be reduced by:",
-            "options": [
-                "Normalization",
-                "Adding noise",
-                "Increasing bias",
-                "Random guessing"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q12",
-            "question": "Supervised learning uses:",
-            "options": [
-                "Labeled data",
-                "Unlabeled data",
-                "Random data",
-                "Only images"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q13",
-            "question": "Overfitting means:",
-            "options": [
-                "Model fits training data too well, fails on test data",
-                "Model fits test data only",
-                "Model has no errors",
-                "Model is undertrained"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q14",
-            "question": "Unsupervised learning is mainly used for:",
-            "options": [
-                "Classification",
-                "Clustering",
-                "Regression",
-                "Loss reduction"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q15",
-            "question": "A perceptron is a:",
-            "options": [
-                "Single-layer neural network unit",
-                "Probability function",
-                "Loss function",
-                "Hyperparameter"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q16",
-            "question": "Backpropagation is used to:",
-            "options": [
-                "Update weights using gradients",
-                "Split data into training and testing sets",
-                "Increase dataset size",
-                "Remove noise from images"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q17",
-            "question": "Activation functions add:",
-            "options": [
-                "Linearity",
-                "Non-linearity",
-                "Bias removal",
-                "Noise"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q18",
-            "question": "Model capacity refers to:",
-            "options": [
-                "Size of dataset",
-                "Ability of a model to fit a wide range of functions",
-                "GPU memory",
-                "Number of labels"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q19",
-            "question": "Underfitting occurs when:",
-            "options": [
-                "Model is too simple to capture patterns",
-                "Model fits training data too much",
-                "Data is too small",
-                "Loss is zero"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q20",
-            "question": "Increasing model capacity can lead to:",
-            "options": [
-                "Underfitting",
-                "Overfitting",
-                "No change in performance",
-                "Lower variance"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q21",
-            "question": "Learning rate is a:",
-            "options": [
-                "Weight value",
-                "Hyperparameter",
-                "Loss function",
-                "Output value"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q22",
-            "question": "Validation set is used for:",
-            "options": [
-                "Training model",
-                "Adjusting hyperparameters",
-                "Deploying model",
-                "Storing raw data"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q23",
-            "question": "Batch size controls:",
-            "options": [
-                "Number of data samples processed before updating weights",
-                "Size of validation set",
-                "Number of epochs",
-                "Number of layers"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q24",
-            "question": "High bias leads to:",
-            "options": [
-                "Underfitting",
-                "Overfitting",
-                "No learning",
-                "Large datasets"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q25",
-            "question": "High variance leads to:",
-            "options": [
-                "Stable predictions",
-                "Overfitting",
-                "Underfitting",
-                "Faster convergence"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q26",
-            "question": "Bias-variance trade-off aims to:",
-            "options": [
-                "Minimize both bias and variance for better generalization",
-                "Increase both bias and variance",
-                "Maximize loss",
-                "Remove labels from dataset"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q27",
-            "question": "Bayes’ theorem relates:",
-            "options": [
-                "Prior, likelihood, and posterior probabilities",
-                "Weights and biases",
-                "Gradients and learning rate",
-                "Loss and accuracy"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q28",
-            "question": "In Bayesian statistics, the prior represents:",
-            "options": [
-                "New evidence",
-                "Initial belief before seeing data",
-                "Probability after seeing data",
-                "Random noise"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q29",
-            "question": "In SGD, parameters are updated:",
-            "options": [
-                "After one data sample or mini-batch",
-                "After entire dataset is processed",
-                "Without gradients",
-                "Only once"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q30",
-            "question": "A common challenge in deep learning is:",
-            "options": [
-                "Lack of overfitting",
-                "Need for large labeled datasets",
-                "No computation requirement",
-                "Avoiding non-linear activation functions"
-            ],
-            "answer": "b"
-        }
+      {
+        "question_no": "Q1",
+        "question": "The transpose of a matrix changes:",
+        "options": [
+          "Columns into rows",
+          "Rows into columns",
+          "Both a and b",
+          "Nothing changes"
+        ],
+        "answer": "c"
+      },
+      {
+        "question_no": "Q2",
+        "question": "The identity matrix has:",
+        "options": [
+          "All ones",
+          "Ones on the main diagonal, zeros elsewhere",
+          "All zeros",
+          "Only positive numbers"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q3",
+        "question": "The determinant of a matrix is used to:",
+        "options": [
+          "Check if the matrix is invertible",
+          "Add matrices",
+          "Multiply vectors",
+          "Change matrix shape"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q4",
+        "question": "In deep learning, tensors are:",
+        "options": [
+          "Only scalars",
+          "Multi-dimensional arrays",
+          "Probability functions",
+          "Loss functions"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q5",
+        "question": "Probability values are always between:",
+        "options": [
+          "0 and 10",
+          "-1 and 1",
+          "0 and 1",
+          "-∞ and ∞"
+        ],
+        "answer": "c"
+      },
+      {
+        "question_no": "Q6",
+        "question": "Conditional probability means:",
+        "options": [
+          "Probability of event A given event B",
+          "Probability of both events happening",
+          "Probability without any event",
+          "None of the above"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q7",
+        "question": "Entropy is a measure of:",
+        "options": [
+          "Certainty",
+          "Uncertainty",
+          "Speed",
+          "Accuracy"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q8",
+        "question": "In classification, cross-entropy loss measures:",
+        "options": [
+          "Distance between vectors",
+          "Difference between predicted and actual probability distributions",
+          "Gradient size",
+          "Dataset size"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q9",
+        "question": "Gradient descent is used for:",
+        "options": [
+          "Increasing the loss",
+          "Finding minimum of a function",
+          "Sorting data",
+          "Increasing learning rate"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q10",
+        "question": "Overflow in computation happens when:",
+        "options": [
+          "Number is too small",
+          "Number is too large to represent",
+          "Learning rate is small",
+          "Memory is empty"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q11",
+        "question": "Numerical instability in deep learning can be reduced by:",
+        "options": [
+          "Normalization",
+          "Adding noise",
+          "Increasing bias",
+          "Random guessing"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q12",
+        "question": "Supervised learning uses:",
+        "options": [
+          "Labeled data",
+          "Unlabeled data",
+          "Random data",
+          "Only images"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q13",
+        "question": "Overfitting means:",
+        "options": [
+          "Model fits training data too well, fails on test data",
+          "Model fits test data only",
+          "Model has no errors",
+          "Model is undertrained"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q14",
+        "question": "Unsupervised learning is mainly used for:",
+        "options": [
+          "Classification",
+          "Clustering",
+          "Regression",
+          "Loss reduction"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q15",
+        "question": "A perceptron is a:",
+        "options": [
+          "Single-layer neural network unit",
+          "Probability function",
+          "Loss function",
+          "Hyperparameter"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q16",
+        "question": "Backpropagation is used to:",
+        "options": [
+          "Update weights using gradients",
+          "Split data into training and testing sets",
+          "Increase dataset size",
+          "Remove noise from images"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q17",
+        "question": "Activation functions add:",
+        "options": [
+          "Linearity",
+          "Non-linearity",
+          "Bias removal",
+          "Noise"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q18",
+        "question": "Model capacity refers to:",
+        "options": [
+          "Size of dataset",
+          "Ability of a model to fit a wide range of functions",
+          "GPU memory",
+          "Number of labels"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q19",
+        "question": "Underfitting occurs when:",
+        "options": [
+          "Model is too simple to capture patterns",
+          "Model fits training data too much",
+          "Data is too small",
+          "Loss is zero"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q20",
+        "question": "Increasing model capacity can lead to:",
+        "options": [
+          "Underfitting",
+          "Overfitting",
+          "No change in performance",
+          "Lower variance"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q21",
+        "question": "Learning rate is a:",
+        "options": [
+          "Weight value",
+          "Hyperparameter",
+          "Loss function",
+          "Output value"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q22",
+        "question": "Validation set is used for:",
+        "options": [
+          "Training model",
+          "Adjusting hyperparameters",
+          "Deploying model",
+          "Storing raw data"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q23",
+        "question": "Batch size controls:",
+        "options": [
+          "Number of data samples processed before updating weights",
+          "Size of validation set",
+          "Number of epochs",
+          "Number of layers"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q24",
+        "question": "High bias leads to:",
+        "options": [
+          "Underfitting",
+          "Overfitting",
+          "No learning",
+          "Large datasets"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q25",
+        "question": "High variance leads to:",
+        "options": [
+          "Stable predictions",
+          "Overfitting",
+          "Underfitting",
+          "Faster convergence"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q26",
+        "question": "Bias-variance trade-off aims to:",
+        "options": [
+          "Minimize both bias and variance for better generalization",
+          "Increase both bias and variance",
+          "Maximize loss",
+          "Remove labels from dataset"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q27",
+        "question": "Bayes’ theorem relates:",
+        "options": [
+          "Prior, likelihood, and posterior probabilities",
+          "Weights and biases",
+          "Gradients and learning rate",
+          "Loss and accuracy"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q28",
+        "question": "In Bayesian statistics, the prior represents:",
+        "options": [
+          "New evidence",
+          "Initial belief before seeing data",
+          "Probability after seeing data",
+          "Random noise"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q29",
+        "question": "In SGD, parameters are updated:",
+        "options": [
+          "After one data sample or mini-batch",
+          "After entire dataset is processed",
+          "Without gradients",
+          "Only once"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q30",
+        "question": "A common challenge in deep learning is:",
+        "options": [
+          "Lack of overfitting",
+          "Need for large labeled datasets",
+          "No computation requirement",
+          "Avoiding non-linear activation functions"
+        ],
+        "answer": "b"
+      }
     ],
     "Set 3": [
-        {
-            "question_no": "Q1",
-            "question": "A deep feed forward network is also known as:",
-            "options": [
-                "Recurrent Neural Network",
-                "Multilayer Perceptron",
-                "Convolutional Neural Network",
-                "Decision Tree"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q2",
-            "question": "In a feed forward network, data flows:",
-            "options": [
-                "Back and forth between layers",
-                "In one direction from input to output",
-                "In loops within the same layer",
-                "Randomly between neurons"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q3",
-            "question": "The depth of a neural network refers to:",
-            "options": [
-                "Number of neurons in a layer",
-                "Number of layers between input and output",
-                "Amount of training data",
-                "Size of weights"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q4",
-            "question": "The gradient in machine learning represents:",
-            "options": [
-                "Rate of change of loss with respect to parameters",
-                "Number of training samples",
-                "Size of the network",
-                "Accuracy of the model"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q5",
-            "question": "In gradient descent, parameters are updated:",
-            "options": [
-                "In the opposite direction of the gradient",
-                "In the same direction of the gradient",
-                "Randomly",
-                "Only at the start of training"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q6",
-            "question": "Hidden units in a neural network are:",
-            "options": [
-                "Output neurons only",
-                "Neurons between input and output layers",
-                "Only convolutional filters",
-                "Loss functions"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q7",
-            "question": "The activation function of hidden units introduces:",
-            "options": [
-                "Non-linearity",
-                "Bias removal",
-                "Noise",
-                "Regularization"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q8",
-            "question": "The architecture of a neural network includes:",
-            "options": [
-                "Number of layers and units per layer",
-                "Learning rate",
-                "Batch size",
-                "Loss function only"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q9",
-            "question": "Designing deeper architectures can improve:",
-            "options": [
-                "Representation learning ability",
-                "Dataset size",
-                "Memory size only",
-                "Randomness in weights"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q10",
-            "question": "Back-propagation updates weights by:",
-            "options": [
-                "Passing errors backward through the network",
-                "Sending inputs backward",
-                "Random guessing",
-                "Eliminating gradients"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q11",
-            "question": "The chain rule in calculus is essential for:",
-            "options": [
-                "Computing gradients in back-propagation",
-                "Initializing weights",
-                "Shuffling data",
-                "Choosing activation functions"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q12",
-            "question": "Dropout is a regularization technique that:",
-            "options": [
-                "Removes neurons randomly during training",
-                "Increases model depth",
-                "Reduces dataset size",
-                "Changes the activation function"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q13",
-            "question": "Adam optimizer is an example of:",
-            "options": [
-                "Probability function",
-                "Adaptive gradient-based optimization algorithm",
-                "Data preprocessing method",
-                "Loss function"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q14",
-            "question": "In CNNs, convolution layers are mainly used for:",
-            "options": [
-                "Extracting spatial features",
-                "Increasing dataset size",
-                "Reducing overfitting only",
-                "Adding noise"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q15",
-            "question": "Pooling layers in CNNs are used to:",
-            "options": [
-                "Reduce spatial dimensions of feature maps",
-                "Increase learning rate",
-                "Add more hidden layers",
-                "Perform back-propagation"
-            ],
-            "answer": "a"
-        }
+      {
+        "question_no": "Q1",
+        "question": "A deep feed forward network is also known as:",
+        "options": [
+          "Recurrent Neural Network",
+          "Multilayer Perceptron",
+          "Convolutional Neural Network",
+          "Decision Tree"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q2",
+        "question": "In a feed forward network, data flows:",
+        "options": [
+          "Back and forth between layers",
+          "In one direction from input to output",
+          "In loops within the same layer",
+          "Randomly between neurons"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q3",
+        "question": "The depth of a neural network refers to:",
+        "options": [
+          "Number of neurons in a layer",
+          "Number of layers between input and output",
+          "Amount of training data",
+          "Size of weights"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q4",
+        "question": "The gradient in machine learning represents:",
+        "options": [
+          "Rate of change of loss with respect to parameters",
+          "Number of training samples",
+          "Size of the network",
+          "Accuracy of the model"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q5",
+        "question": "In gradient descent, parameters are updated:",
+        "options": [
+          "In the opposite direction of the gradient",
+          "In the same direction of the gradient",
+          "Randomly",
+          "Only at the start of training"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q6",
+        "question": "Hidden units in a neural network are:",
+        "options": [
+          "Output neurons only",
+          "Neurons between input and output layers",
+          "Only convolutional filters",
+          "Loss functions"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q7",
+        "question": "The activation function of hidden units introduces:",
+        "options": [
+          "Non-linearity",
+          "Bias removal",
+          "Noise",
+          "Regularization"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q8",
+        "question": "The architecture of a neural network includes:",
+        "options": [
+          "Number of layers and units per layer",
+          "Learning rate",
+          "Batch size",
+          "Loss function only"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q9",
+        "question": "Designing deeper architectures can improve:",
+        "options": [
+          "Representation learning ability",
+          "Dataset size",
+          "Memory size only",
+          "Randomness in weights"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q10",
+        "question": "Back-propagation updates weights by:",
+        "options": [
+          "Passing errors backward through the network",
+          "Sending inputs backward",
+          "Random guessing",
+          "Eliminating gradients"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q11",
+        "question": "The chain rule in calculus is essential for:",
+        "options": [
+          "Computing gradients in back-propagation",
+          "Initializing weights",
+          "Shuffling data",
+          "Choosing activation functions"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q12",
+        "question": "Dropout is a regularization technique that:",
+        "options": [
+          "Removes neurons randomly during training",
+          "Increases model depth",
+          "Reduces dataset size",
+          "Changes the activation function"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q13",
+        "question": "Adam optimizer is an example of:",
+        "options": [
+          "Probability function",
+          "Adaptive gradient-based optimization algorithm",
+          "Data preprocessing method",
+          "Loss function"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q14",
+        "question": "In CNNs, convolution layers are mainly used for:",
+        "options": [
+          "Extracting spatial features",
+          "Increasing dataset size",
+          "Reducing overfitting only",
+          "Adding noise"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q15",
+        "question": "Pooling layers in CNNs are used to:",
+        "options": [
+          "Reduce spatial dimensions of feature maps",
+          "Increase learning rate",
+          "Add more hidden layers",
+          "Perform back-propagation"
+        ],
+        "answer": "a"
+      }
     ],
     "Set 4": [
-        {
-            "question_no": "Q1",
-            "question": "The main feature of recurrent networks is:",
-            "options": [
-                "Layers connected only in one direction",
-                "Loops allowing information to persist over time",
-                "Random connections between neurons",
-                "Only convolution operations"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q2",
-            "question": "Recursive neural networks are mainly used for:",
-            "options": [
-                "Sequential data only",
-                "Tree-structured data",
-                "Image classification only",
-                "Loss computation"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q3",
-            "question": "A key difference between RNNs and recursive nets is:",
-            "options": [
-                "RNNs process sequences, recursive nets process hierarchies",
-                "RNNs are unsupervised, recursive nets are supervised",
-                "Recursive nets cannot be trained",
-                "RNNs have no activation functions"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q4",
-            "question": "RNNs are good at handling:",
-            "options": [
-                "Independent data points only",
-                "Sequential data with temporal dependencies",
-                "Random noise",
-                "Static images without sequence"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q5",
-            "question": "A major drawback of vanilla RNNs is:",
-            "options": [
-                "They cannot handle inputs at all",
-                "Vanishing or exploding gradients",
-                "Always overfit small datasets",
-                "Lack of hidden layers"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q6",
-            "question": "Long Short-Term Memory (LSTM) networks help to:",
-            "options": [
-                "Reduce training data size",
-                "Solve vanishing gradient problem",
-                "Increase dataset noise",
-                "Replace activation functions"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q7",
-            "question": "Deep RNNs stack:",
-            "options": [
-                "Multiple RNN layers",
-                "Multiple convolution layers",
-                "Only pooling layers",
-                "Decision trees"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q8",
-            "question": "Deep RNNs can learn:",
-            "options": [
-                "More complex sequence patterns",
-                "Fewer patterns than shallow RNNs",
-                "Only one time step dependency",
-                "Without training data"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q9",
-            "question": "A recursive network builds:",
-            "options": [
-                "Representations using a binary tree structure",
-                "Only a sequence of identical steps",
-                "Feature maps using convolution",
-                "Independent linear models"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q10",
-            "question": "Recursive nets are often used in:",
-            "options": [
-                "Natural language parsing",
-                "Image resizing",
-                "Data normalization",
-                "Feature scaling"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q11",
-            "question": "Teacher forcing in RNN training means:",
-            "options": [
-                "Feeding model’s own predictions back into itself",
-                "Feeding the correct output from training data into the next step",
-                "Stopping training early",
-                "Ignoring the hidden state"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q12",
-            "question": "Gradient clipping is used to:",
-            "options": [
-                "Reduce overfitting",
-                "Prevent exploding gradients",
-                "Increase learning rate",
-                "Remove regularization"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q13",
-            "question": "Accuracy is best used for:",
-            "options": [
-                "Balanced datasets",
-                "Highly imbalanced datasets",
-                "Regression problems",
-                "Overfitting prevention"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q14",
-            "question": "F1-score is the harmonic mean of:",
-            "options": [
-                "Accuracy and loss",
-                "Precision and recall",
-                "Sensitivity and specificity",
-                "Recall and accuracy"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q15",
-            "question": "The number of hidden units in an RNN affects:",
-            "options": [
-                "Model capacity",
-                "File storage size only",
-                "Training dataset length",
-                "Type of loss function"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q16",
-            "question": "Learning rate controls:",
-            "options": [
-                "Size of the dataset",
-                "Step size in parameter updates",
-                "Number of hidden layers",
-                "Data shuffling"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q17",
-            "question": "If an RNN’s loss is not decreasing, a first check should be:",
-            "options": [
-                "Whether the learning rate is too high or low",
-                "Removing activation functions",
-                "Adding more test data",
-                "Reducing hidden units to zero"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q18",
-            "question": "To detect overfitting, we compare:",
-            "options": [
-                "Training accuracy vs test accuracy",
-                "Learning rate vs batch size",
-                "Number of epochs vs dataset size",
-                "Loss vs accuracy"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q19",
-            "question": "Visualization of gradients during training helps to:",
-            "options": [
-                "Detect vanishing/exploding gradient problems",
-                "Change activation functions",
-                "Add noise to data",
-                "Increase dataset size"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q20",
-            "question": "Using a smaller batch size during debugging can:",
-            "options": [
-                "Speed up testing and identify errors faster",
-                "Remove need for back-propagation",
-                "Change data labels",
-                "Increase dataset size"
-            ],
-            "answer": "a"
-        }
+      {
+        "question_no": "Q1",
+        "question": "The main feature of recurrent networks is:",
+        "options": [
+          "Layers connected only in one direction",
+          "Loops allowing information to persist over time",
+          "Random connections between neurons",
+          "Only convolution operations"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q2",
+        "question": "Recursive neural networks are mainly used for:",
+        "options": [
+          "Sequential data only",
+          "Tree-structured data",
+          "Image classification only",
+          "Loss computation"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q3",
+        "question": "A key difference between RNNs and recursive nets is:",
+        "options": [
+          "RNNs process sequences, recursive nets process hierarchies",
+          "RNNs are unsupervised, recursive nets are supervised",
+          "Recursive nets cannot be trained",
+          "RNNs have no activation functions"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q4",
+        "question": "RNNs are good at handling:",
+        "options": [
+          "Independent data points only",
+          "Sequential data with temporal dependencies",
+          "Random noise",
+          "Static images without sequence"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q5",
+        "question": "A major drawback of vanilla RNNs is:",
+        "options": [
+          "They cannot handle inputs at all",
+          "Vanishing or exploding gradients",
+          "Always overfit small datasets",
+          "Lack of hidden layers"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q6",
+        "question": "Long Short-Term Memory (LSTM) networks help to:",
+        "options": [
+          "Reduce training data size",
+          "Solve vanishing gradient problem",
+          "Increase dataset noise",
+          "Replace activation functions"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q7",
+        "question": "Deep RNNs stack:",
+        "options": [
+          "Multiple RNN layers",
+          "Multiple convolution layers",
+          "Only pooling layers",
+          "Decision trees"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q8",
+        "question": "Deep RNNs can learn:",
+        "options": [
+          "More complex sequence patterns",
+          "Fewer patterns than shallow RNNs",
+          "Only one time step dependency",
+          "Without training data"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q9",
+        "question": "A recursive network builds:",
+        "options": [
+          "Representations using a binary tree structure",
+          "Only a sequence of identical steps",
+          "Feature maps using convolution",
+          "Independent linear models"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q10",
+        "question": "Recursive nets are often used in:",
+        "options": [
+          "Natural language parsing",
+          "Image resizing",
+          "Data normalization",
+          "Feature scaling"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q11",
+        "question": "Teacher forcing in RNN training means:",
+        "options": [
+          "Feeding model’s own predictions back into itself",
+          "Feeding the correct output from training data into the next step",
+          "Stopping training early",
+          "Ignoring the hidden state"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q12",
+        "question": "Gradient clipping is used to:",
+        "options": [
+          "Reduce overfitting",
+          "Prevent exploding gradients",
+          "Increase learning rate",
+          "Remove regularization"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q13",
+        "question": "Accuracy is best used for:",
+        "options": [
+          "Balanced datasets",
+          "Highly imbalanced datasets",
+          "Regression problems",
+          "Overfitting prevention"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q14",
+        "question": "F1-score is the harmonic mean of:",
+        "options": [
+          "Accuracy and loss",
+          "Precision and recall",
+          "Sensitivity and specificity",
+          "Recall and accuracy"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q15",
+        "question": "The number of hidden units in an RNN affects:",
+        "options": [
+          "Model capacity",
+          "File storage size only",
+          "Training dataset length",
+          "Type of loss function"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q16",
+        "question": "Learning rate controls:",
+        "options": [
+          "Size of the dataset",
+          "Step size in parameter updates",
+          "Number of hidden layers",
+          "Data shuffling"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q17",
+        "question": "If an RNN’s loss is not decreasing, a first check should be:",
+        "options": [
+          "Whether the learning rate is too high or low",
+          "Removing activation functions",
+          "Adding more test data",
+          "Reducing hidden units to zero"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q18",
+        "question": "To detect overfitting, we compare:",
+        "options": [
+          "Training accuracy vs test accuracy",
+          "Learning rate vs batch size",
+          "Number of epochs vs dataset size",
+          "Loss vs accuracy"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q19",
+        "question": "Visualization of gradients during training helps to:",
+        "options": [
+          "Detect vanishing/exploding gradient problems",
+          "Change activation functions",
+          "Add noise to data",
+          "Increase dataset size"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q20",
+        "question": "Using a smaller batch size during debugging can:",
+        "options": [
+          "Speed up testing and identify errors faster",
+          "Remove need for back-propagation",
+          "Change data labels",
+          "Increase dataset size"
+        ],
+        "answer": "a"
+      }
     ],
     "Set 5": [
-        {
-            "question_no": "Q1",
-            "question": "Probabilistic PCA models:",
-            "options": [
-                "Only categorical data",
-                "Continuous data with Gaussian assumptions",
-                "Binary classification problems",
-                "Decision trees"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q2",
-            "question": "Factor analysis aims to:",
-            "options": [
-                "Discover hidden variables explaining observed correlations",
-                "Reduce dataset size by removing features randomly",
-                "Classify data into clusters",
-                "Increase dimensionality"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q3",
-            "question": "A difference between PCA and probabilistic PCA is:",
-            "options": [
-                "Probabilistic PCA assumes a Gaussian noise model",
-                "PCA works only for images",
-                "Probabilistic PCA uses no mathematics",
-                "PCA is always supervised"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q4",
-            "question": "Factor loadings in factor analysis represent:",
-            "options": [
-                "Strength of relationship between observed and latent variables",
-                "Number of samples in dataset",
-                "Noise level in the data",
-                "Model accuracy"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q5",
-            "question": "Independent Component Analysis (ICA) aims to:",
-            "options": [
-                "Separate a multivariate signal into statistically independent components",
-                "Reduce dimensionality",
-                "Increase data correlation",
-                "Remove all noise"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q6",
-            "question": "ICA is often used in:",
-            "options": [
-                "Blind source separation problems",
-                "Image resizing",
-                "Decision tree pruning",
-                "Graph neural networks"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q7",
-            "question": "Slow Feature Analysis (SFA) extracts:",
-            "options": [
-                "Features that change slowly over time",
-                "Fast-changing signal features",
-                "Random features from data",
-                "Only static patterns"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q8",
-            "question": "SFA is useful in:",
-            "options": [
-                "Speech recognition",
-                "Visual object recognition in dynamic environments",
-                "Image compression only",
-                "Random data shuffling"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q9",
-            "question": "Sparse coding represents data as:",
-            "options": [
-                "A dense combination of all basis vectors",
-                "A combination of few active basis vectors",
-                "Random noise",
-                "Fully independent components"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q10",
-            "question": "Sparse coding is often applied in:",
-            "options": [
-                "Image denoising",
-                "Model overfitting",
-                "Data scrambling",
-                "Gradient clipping"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q11",
-            "question": "Unstructured modeling often struggles with:",
-            "options": [
-                "Lack of clear relationships between variables",
-                "Overuse of labeled datasets",
-                "Perfectly clean data",
-                "Fixed-size inputs"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q12",
-            "question": "A common challenge in unstructured modeling is:",
-            "options": [
-                "Difficulty in feature extraction",
-                "Abundance of labeled data",
-                "No need for training",
-                "Easy optimization"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q13",
-            "question": "Graphs in model structure represent:",
-            "options": [
-                "Variables as nodes and dependencies as edges",
-                "Training loss",
-                "Only input features",
-                "Weights and biases only"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q14",
-            "question": "Graphical models help to:",
-            "options": [
-                "Capture dependencies between random variables",
-                "Increase dataset noise",
-                "Remove probabilities",
-                "Avoid model training"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q15",
-            "question": "Gibbs sampling is used to:",
-            "options": [
-                "Generate samples from a joint distribution",
-                "Remove irrelevant features",
-                "Perform gradient descent",
-                "Train CNNs"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q16",
-            "question": "Sampling from graphical models is useful for:",
-            "options": [
-                "Approximate inference",
-                "Increasing data dimensionality",
-                "Model overfitting",
-                "Weight initialization only"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q17",
-            "question": "Structured modeling incorporates:",
-            "options": [
-                "Prior knowledge about relationships in data",
-                "Only random features",
-                "Unrelated datasets",
-                "Overfitting intentionally"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q18",
-            "question": "One advantage of structured modeling is:",
-            "options": [
-                "Better interpretability of the model",
-                "Increased randomness",
-                "Lack of dependencies",
-                "Avoidance of prior knowledge"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q19",
-            "question": "Structured models are especially useful in:",
-            "options": [
-                "Natural language processing and computer vision",
-                "Random number generation",
-                "Model pruning",
-                "Noise injection"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q20",
-            "question": "Compared to unstructured models, structured models:",
-            "options": [
-                "Exploit data relationships for better generalization",
-                "Ignore variable dependencies",
-                "Always require less computation",
-                "Use only supervised learning",
-                "Supervised learning model",
-                "Stochastic recurrent neural network",
-                "Deterministic feedforward network",
-                "Linear regression model"
-            ],
-            "answer": "b"
-        }
+      {
+        "question_no": "Q1",
+        "question": "Probabilistic PCA models:",
+        "options": [
+          "Only categorical data",
+          "Continuous data with Gaussian assumptions",
+          "Binary classification problems",
+          "Decision trees"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q2",
+        "question": "Factor analysis aims to:",
+        "options": [
+          "Discover hidden variables explaining observed correlations",
+          "Reduce dataset size by removing features randomly",
+          "Classify data into clusters",
+          "Increase dimensionality"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q3",
+        "question": "A difference between PCA and probabilistic PCA is:",
+        "options": [
+          "Probabilistic PCA assumes a Gaussian noise model",
+          "PCA works only for images",
+          "Probabilistic PCA uses no mathematics",
+          "PCA is always supervised"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q4",
+        "question": "Factor loadings in factor analysis represent:",
+        "options": [
+          "Strength of relationship between observed and latent variables",
+          "Number of samples in dataset",
+          "Noise level in the data",
+          "Model accuracy"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q5",
+        "question": "Independent Component Analysis (ICA) aims to:",
+        "options": [
+          "Separate a multivariate signal into statistically independent components",
+          "Reduce dimensionality",
+          "Increase data correlation",
+          "Remove all noise"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q6",
+        "question": "ICA is often used in:",
+        "options": [
+          "Blind source separation problems",
+          "Image resizing",
+          "Decision tree pruning",
+          "Graph neural networks"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q7",
+        "question": "Slow Feature Analysis (SFA) extracts:",
+        "options": [
+          "Features that change slowly over time",
+          "Fast-changing signal features",
+          "Random features from data",
+          "Only static patterns"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q8",
+        "question": "SFA is useful in:",
+        "options": [
+          "Speech recognition",
+          "Visual object recognition in dynamic environments",
+          "Image compression only",
+          "Random data shuffling"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q9",
+        "question": "Sparse coding represents data as:",
+        "options": [
+          "A dense combination of all basis vectors",
+          "A combination of few active basis vectors",
+          "Random noise",
+          "Fully independent components"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q10",
+        "question": "Sparse coding is often applied in:",
+        "options": [
+          "Image denoising",
+          "Model overfitting",
+          "Data scrambling",
+          "Gradient clipping"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q11",
+        "question": "Unstructured modeling often struggles with:",
+        "options": [
+          "Lack of clear relationships between variables",
+          "Overuse of labeled datasets",
+          "Perfectly clean data",
+          "Fixed-size inputs"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q12",
+        "question": "A common challenge in unstructured modeling is:",
+        "options": [
+          "Difficulty in feature extraction",
+          "Abundance of labeled data",
+          "No need for training",
+          "Easy optimization"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q13",
+        "question": "Graphs in model structure represent:",
+        "options": [
+          "Variables as nodes and dependencies as edges",
+          "Training loss",
+          "Only input features",
+          "Weights and biases only"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q14",
+        "question": "Graphical models help to:",
+        "options": [
+          "Capture dependencies between random variables",
+          "Increase dataset noise",
+          "Remove probabilities",
+          "Avoid model training"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q15",
+        "question": "Gibbs sampling is used to:",
+        "options": [
+          "Generate samples from a joint distribution",
+          "Remove irrelevant features",
+          "Perform gradient descent",
+          "Train CNNs"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q16",
+        "question": "Sampling from graphical models is useful for:",
+        "options": [
+          "Approximate inference",
+          "Increasing data dimensionality",
+          "Model overfitting",
+          "Weight initialization only"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q17",
+        "question": "Structured modeling incorporates:",
+        "options": [
+          "Prior knowledge about relationships in data",
+          "Only random features",
+          "Unrelated datasets",
+          "Overfitting intentionally"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q18",
+        "question": "One advantage of structured modeling is:",
+        "options": [
+          "Better interpretability of the model",
+          "Increased randomness",
+          "Lack of dependencies",
+          "Avoidance of prior knowledge"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q19",
+        "question": "Structured models are especially useful in:",
+        "options": [
+          "Natural language processing and computer vision",
+          "Random number generation",
+          "Model pruning",
+          "Noise injection"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q20",
+        "question": "Compared to unstructured models, structured models:",
+        "options": [
+          "Exploit data relationships for better generalization",
+          "Ignore variable dependencies",
+          "Always require less computation",
+          "Use only supervised learning",
+          "Supervised learning model",
+          "Stochastic recurrent neural network",
+          "Deterministic feedforward network",
+          "Linear regression model"
+        ],
+        "answer": "b"
+      }
     ],
     "Set 6": [
-        {
-            "question_no": "Q1",
-            "question": "Boltzmann Machines is a type of:",
-            "options": [
-                "Supervised learning model",
-                "Stochastic recurrent neural network",
-                "Deterministic feedforward network",
-                "Linear regression model"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q2",
-            "question": "Boltzmann Machines use which type of units?",
-            "options": [
-                "Deterministic units only",
-                "Binary stochastic units",
-                "Continuous deterministic units",
-                "Decision tree nodes"
-            ],
-            "answer": "b"
-        },
-        {
-            "question_no": "Q3",
-            "question": "The energy function in a Boltzmann Machine is used to:",
-            "options": [
-                "Measure the compatibility of a state configuration",
-                "Increase gradient size",
-                "Select activation function",
-                "Shuffle the dataset"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q4",
-            "question": "A Restricted Boltzmann Machine (RBM) differs from a general Boltzmann Machine by:",
-            "options": [
-                "Having connections only between visible and hidden units",
-                "Having full connections between all units",
-                "Using no hidden layer",
-                "Being a convolutional network"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q5",
-            "question": "Deep Belief Networks (DBNs) are composed of:",
-            "options": [
-                "Stacked Restricted Boltzmann Machines",
-                "Fully connected feedforward layers only",
-                "Only convolution layers",
-                "Decision trees"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q6",
-            "question": "The training of DBNs often involves:",
-            "options": [
-                "Layer-wise unsupervised pretraining followed by supervised fine-tuning",
-                "Direct supervised learning from scratch",
-                "Reinforcement learning only",
-                "Random weight assignment"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q7",
-            "question": "DBNs are mainly used for:",
-            "options": [
-                "Feature extraction and generative modeling",
-                "Only regression tasks",
-                "Increasing batch size",
-                "Gradient clipping"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q8",
-            "question": "A Deep Boltzmann Machine (DBM) differs from an RBM by:",
-            "options": [
-                "Having multiple layers of hidden units",
-                "Using no visible units",
-                "Not using probabilistic modeling",
-                "Using only convolution filters"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q9",
-            "question": "DBMs are trained using:",
-            "options": [
-                "Approximate inference techniques like mean-field",
-                "Pure backpropagation",
-                "Exact maximum likelihood",
-                "Random guessing"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q10",
-            "question": "Convolutional Boltzmann Machines are designed to:",
-            "options": [
-                "Capture local spatial features in data",
-                "Replace all pooling operations",
-                "Work only with text data",
-                "Remove convolution operations"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q11",
-            "question": "A key advantage of Convolutional Boltzmann Machines is:",
-            "options": [
-                "Parameter sharing for image feature extraction",
-                "Need for very large parameters",
-                "Only working on one-dimensional data",
-                "Ignoring spatial correlations"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q12",
-            "question": "Boltzmann Machines for structured outputs are adapted to:",
-            "options": [
-                "Predict interdependent output variables",
-                "Work only with independent labels",
-                "Ignore dependencies in data",
-                "Reduce dimensionality"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q13",
-            "question": "For sequential outputs, Boltzmann Machines can:",
-            "options": [
-                "Model temporal dependencies in sequences",
-                "Only process independent data",
-                "Avoid recurrent connections",
-                "Work only with static features"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q14",
-            "question": "Directed generative networks define:",
-            "options": [
-                "A probability distribution using a directed graphical model",
-                "Only deterministic mappings",
-                "Loss functions only",
-                "Convolution kernels"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q15",
-            "question": "An example of a directed generative network is:",
-            "options": [
-                "Variational Autoencoder",
-                "DBM",
-                "RBM",
-                "CNN"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q16",
-            "question": "Directed generative models differ from undirected ones because:",
-            "options": [
-                "They specify conditional probabilities explicitly in one direction",
-                "They have no probability interpretation",
-                "They avoid learning parameters",
-                "They cannot handle hidden variables"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q17",
-            "question": "One way to evaluate a generative model is to:",
-            "options": [
-                "Measure log-likelihood of test data",
-                "Only check training loss",
-                "Ignore probability distributions",
-                "Count number of layers"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q18",
-            "question": "The Inception Score is used to evaluate:",
-            "options": [
-                "Image quality and diversity in generative models",
-                "Training speed",
-                "Dataset size",
-                "Gradient size"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q19",
-            "question": "In generative modeling, mode collapse refers to:",
-            "options": [
-                "Model generating limited variety of outputs",
-                "Model generating too many modes",
-                "Dataset shrinking",
-                "Overfitting"
-            ],
-            "answer": "a"
-        },
-        {
-            "question_no": "Q20",
-            "question": "Human evaluation of generative models is:",
-            "options": [
-                "Subjective but useful for perceptual quality assessment",
-                "Always more accurate than automated metrics",
-                "Not needed for GANs",
-                "Only used in supervised learning"
-            ],
-            "answer": "a"
-        }
+      {
+        "question_no": "Q1",
+        "question": "Boltzmann Machines is a type of:",
+        "options": [
+          "Supervised learning model",
+          "Stochastic recurrent neural network",
+          "Deterministic feedforward network",
+          "Linear regression model"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q2",
+        "question": "Boltzmann Machines use which type of units?",
+        "options": [
+          "Deterministic units only",
+          "Binary stochastic units",
+          "Continuous deterministic units",
+          "Decision tree nodes"
+        ],
+        "answer": "b"
+      },
+      {
+        "question_no": "Q3",
+        "question": "The energy function in a Boltzmann Machine is used to:",
+        "options": [
+          "Measure the compatibility of a state configuration",
+          "Increase gradient size",
+          "Select activation function",
+          "Shuffle the dataset"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q4",
+        "question": "A Restricted Boltzmann Machine (RBM) differs from a general Boltzmann Machine by:",
+        "options": [
+          "Having connections only between visible and hidden units",
+          "Having full connections between all units",
+          "Using no hidden layer",
+          "Being a convolutional network"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q5",
+        "question": "Deep Belief Networks (DBNs) are composed of:",
+        "options": [
+          "Stacked Restricted Boltzmann Machines",
+          "Fully connected feedforward layers only",
+          "Only convolution layers",
+          "Decision trees"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q6",
+        "question": "The training of DBNs often involves:",
+        "options": [
+          "Layer-wise unsupervised pretraining followed by supervised fine-tuning",
+          "Direct supervised learning from scratch",
+          "Reinforcement learning only",
+          "Random weight assignment"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q7",
+        "question": "DBNs are mainly used for:",
+        "options": [
+          "Feature extraction and generative modeling",
+          "Only regression tasks",
+          "Increasing batch size",
+          "Gradient clipping"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q8",
+        "question": "A Deep Boltzmann Machine (DBM) differs from an RBM by:",
+        "options": [
+          "Having multiple layers of hidden units",
+          "Using no visible units",
+          "Not using probabilistic modeling",
+          "Using only convolution filters"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q9",
+        "question": "DBMs are trained using:",
+        "options": [
+          "Approximate inference techniques like mean-field",
+          "Pure backpropagation",
+          "Exact maximum likelihood",
+          "Random guessing"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q10",
+        "question": "Convolutional Boltzmann Machines are designed to:",
+        "options": [
+          "Capture local spatial features in data",
+          "Replace all pooling operations",
+          "Work only with text data",
+          "Remove convolution operations"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q11",
+        "question": "A key advantage of Convolutional Boltzmann Machines is:",
+        "options": [
+          "Parameter sharing for image feature extraction",
+          "Need for very large parameters",
+          "Only working on one-dimensional data",
+          "Ignoring spatial correlations"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q12",
+        "question": "Boltzmann Machines for structured outputs are adapted to:",
+        "options": [
+          "Predict interdependent output variables",
+          "Work only with independent labels",
+          "Ignore dependencies in data",
+          "Reduce dimensionality"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q13",
+        "question": "For sequential outputs, Boltzmann Machines can:",
+        "options": [
+          "Model temporal dependencies in sequences",
+          "Only process independent data",
+          "Avoid recurrent connections",
+          "Work only with static features"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q14",
+        "question": "Directed generative networks define:",
+        "options": [
+          "A probability distribution using a directed graphical model",
+          "Only deterministic mappings",
+          "Loss functions only",
+          "Convolution kernels"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q15",
+        "question": "An example of a directed generative network is:",
+        "options": [
+          "Variational Autoencoder",
+          "DBM",
+          "RBM",
+          "CNN"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q16",
+        "question": "Directed generative models differ from undirected ones because:",
+        "options": [
+          "They specify conditional probabilities explicitly in one direction",
+          "They have no probability interpretation",
+          "They avoid learning parameters",
+          "They cannot handle hidden variables"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q17",
+        "question": "One way to evaluate a generative model is to:",
+        "options": [
+          "Measure log-likelihood of test data",
+          "Only check training loss",
+          "Ignore probability distributions",
+          "Count number of layers"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q18",
+        "question": "The Inception Score is used to evaluate:",
+        "options": [
+          "Image quality and diversity in generative models",
+          "Training speed",
+          "Dataset size",
+          "Gradient size"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q19",
+        "question": "In generative modeling, mode collapse refers to:",
+        "options": [
+          "Model generating limited variety of outputs",
+          "Model generating too many modes",
+          "Dataset shrinking",
+          "Overfitting"
+        ],
+        "answer": "a"
+      },
+      {
+        "question_no": "Q20",
+        "question": "Human evaluation of generative models is:",
+        "options": [
+          "Subjective but useful for perceptual quality assessment",
+          "Always more accurate than automated metrics",
+          "Not needed for GANs",
+          "Only used in supervised learning"
+        ],
+        "answer": "a"
+      }
     ]
-}
+  }

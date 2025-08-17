@@ -10,20 +10,28 @@ class QuizApp {
 
     async init() {
         await this.loadMCQs();
-        this.startTimer();
-        document.getElementById("submit-quiz").addEventListener("click", () => this.submitQuiz());
+        if (this.questionsArray.length > 0) {
+            this.startTimer();
+            document.getElementById("submit-quiz").addEventListener("click", () => this.submitQuiz());
+        }
     }
 
     async loadMCQs() {
         try {
-            const response = await fetch('mcq_data.json');
+            const response = await fetch('merged_mcq.json');
             if (!response.ok) throw new Error("Data load error");
             const data = await response.json();
 
             let allQuestions = [];
             Object.keys(data).forEach(setKey => {
-                allQuestions = allQuestions.concat(data[setKey]);
+                const questionsWithOptions = data[setKey].filter(q => q.options && q.options.length > 0);
+                allQuestions = allQuestions.concat(questionsWithOptions);
             });
+
+            if (allQuestions.length === 0) {
+                this.showError("No questions with options available for the quiz.");
+                return;
+            }
 
             this.questionsArray = allQuestions
                 .sort(() => Math.random() - 0.5)
@@ -31,8 +39,8 @@ class QuizApp {
 
             this.displayQuestions();
         } catch (err) {
-            document.getElementById("loading").classList.add("hidden");
-            document.getElementById("error").classList.remove("hidden");
+            console.error("Quiz loading error:", err);
+            this.showError("Unable to load quiz questions.");
         }
     }
 
@@ -92,7 +100,6 @@ class QuizApp {
             container.appendChild(questionCard);
         });
 
-        // Fix for large screens
         const styleFix = document.createElement("style");
         styleFix.innerHTML = `.option-item {cursor: pointer;} .option-item * {pointer-events: none;}`;
         document.head.appendChild(styleFix);
@@ -109,10 +116,11 @@ class QuizApp {
         this.questionsArray.forEach((q, index) => {
             let correctIndex = ['a', 'b', 'c', 'd'].indexOf(q.answer.toLowerCase());
             let userChoice = this.userSelections[index];
+
             if (userChoice === correctIndex) {
                 score++;
             } else {
-                reportHTML += `<li><strong>${q.question}</strong><br>
+                 reportHTML += `<li><strong>${q.question}</strong><br>
                                Your Answer: ${userChoice !== undefined ? q.options[userChoice] : 'Not answered'}<br>
                                Correct Answer: ${q.options[correctIndex]}</li>`;
             }
@@ -127,6 +135,19 @@ class QuizApp {
 
         document.getElementById("questions-container").innerHTML =
             `<h3>Score: ${score} / ${this.questionsArray.length}</h3>${reportHTML}`;
+    }
+
+    showError(message) {
+        const errorEl = document.getElementById("error");
+        const loadingEl = document.getElementById("loading");
+        const containerEl = document.getElementById("questions-container");
+
+        loadingEl.classList.add("hidden");
+        containerEl.classList.add("hidden");
+
+        errorEl.classList.remove("hidden");
+        errorEl.querySelector('.error-text').textContent = message;
+
     }
 }
 

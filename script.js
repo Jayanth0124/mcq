@@ -2,7 +2,7 @@ class MCQApp {
     constructor() {
         this.mcqsData = {};
         this.currentSet = null;
-        this.maxQuestions = 50;
+        this.maxQuestions = 250;
         this.userSelections = {};
         this.initializeElements();
         this.bindEvents();
@@ -19,6 +19,7 @@ class MCQApp {
         this.questionsList = document.getElementById('questions-list');
         this.totalQuestionsElement = document.getElementById('total-questions');
         this.currentCoElement = document.getElementById('current-co');
+        this.maxQuestionsLimitElement = document.getElementById('max-questions-limit');
     }
 
     bindEvents() {
@@ -32,7 +33,7 @@ class MCQApp {
     async loadMCQs() {
         try {
             this.showLoading();
-            const response = await fetch('mcq_data.json');
+            const response = await fetch('merged_mcq.json');
             if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
 
             this.mcqsData = await response.json();
@@ -81,13 +82,14 @@ class MCQApp {
 
     displayQuestions() {
         const questionsArray = this.mcqsData[this.currentSet] || [];
-        const questionsToShow = questionsArray.slice(0, this.maxQuestions);
+        this.maxQuestionsLimitElement.textContent = this.maxQuestions;
+
 
         this.questionsTitle.textContent = `${this.currentSet} MCQ Questions`;
-        this.questionsCount.textContent = `Displaying ${Math.min(questionsToShow.length, this.maxQuestions)} of ${questionsArray.length} available questions`;
+        this.questionsCount.textContent = `Displaying ${Math.min(questionsArray.length, this.maxQuestions)} of ${questionsArray.length} available questions`;
 
         this.questionsList.innerHTML = '';
-        questionsToShow.forEach((question, index) => {
+        questionsArray.slice(0, this.maxQuestions).forEach((question, index) => {
             const questionCard = this.createQuestionCard(question, index);
             this.questionsList.appendChild(questionCard);
         });
@@ -106,39 +108,60 @@ class MCQApp {
         const card = document.createElement('div');
         card.className = 'question-card';
 
-        const letter = question.answer.toLowerCase();
-        const correctIndex = ['a','b','c','d'].indexOf(letter);
-        const correctOptionText = question.options[correctIndex];
+        let optionsHTML = '';
+        let answerHTML = '';
+
+        if (question.options && question.options.length > 0) {
+            // MCQ with options
+            const correctIndex = ['a', 'b', 'c', 'd'].indexOf(question.answer.toLowerCase());
+            const correctOptionText = question.options[correctIndex];
+
+            optionsHTML = `
+                <ul class="options-list">
+                    ${question.options.map((opt, i) => `
+                        <li class="option-item" data-q="${question.question_no || index}" data-option-index="${i}">
+                            <span class="option-label">${String.fromCharCode(65 + i)}</span>
+                            <span class="option-text">${opt}</span>
+                        </li>
+                    `).join('')}
+                </ul>`;
+
+            answerHTML = `
+                <div class="answer-label">Correct Answer</div>
+                <div class="answer-text">Option ${String.fromCharCode(65 + correctIndex)}: ${correctOptionText}</div>`;
+
+        } else {
+            // Question with a direct answer
+            answerHTML = `
+                <div class="answer-label">Answer</div>
+                <div class="answer-text">${question.answer}</div>`;
+        }
+
 
         card.innerHTML = `
             <div class="question-header">
-                <div class="question-number">${question.question_no}</div>
+                <div class="question-number">${question.question_no || `Q${index + 1}`}</div>
                 <div class="question-text">${question.question}</div>
             </div>
-            <ul class="options-list">
-                ${question.options.map((opt, i) => `
-                    <li class="option-item" data-q="${question.question_no}" data-option-index="${i}">
-                        <span class="option-label">${String.fromCharCode(65+i)}</span>
-                        <span class="option-text">${opt}</span>
-                    </li>
-                `).join('')}
-            </ul>
+            ${optionsHTML}
             <button class="reveal-btn" data-question-index="${index}">Show Correct Answer</button>
             <div class="answer-display hidden" id="answer-${index}">
-                <div class="answer-label">Correct Answer</div>
-                <div class="answer-text">Option ${String.fromCharCode(65 + correctIndex)}: ${correctOptionText}</div>
+                ${answerHTML}
             </div>
         `;
 
-        card.querySelectorAll('.option-item').forEach(opt => {
-            opt.addEventListener('click', () => {
-                const qNo = opt.getAttribute('data-q');
-                const idx = parseInt(opt.getAttribute('data-option-index'));
-                this.userSelections[qNo] = idx;
-                opt.parentElement.querySelectorAll('.option-item').forEach(s => s.classList.remove('selected'));
-                opt.classList.add('selected');
+        if (question.options && question.options.length > 0) {
+            card.querySelectorAll('.option-item').forEach(opt => {
+                opt.addEventListener('click', () => {
+                    const qNo = opt.getAttribute('data-q');
+                    const idx = parseInt(opt.getAttribute('data-option-index'));
+                    this.userSelections[qNo] = idx;
+                    opt.parentElement.querySelectorAll('.option-item').forEach(s => s.classList.remove('selected'));
+                    opt.classList.add('selected');
+                });
             });
-        });
+        }
+
 
         card.querySelector('.reveal-btn').addEventListener('click', () => {
             this.revealAnswer(index);

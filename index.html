@@ -11,7 +11,6 @@
     <link rel="icon" type="image/svg+xml" href="logo.svg">
 </head>
 <body>
-    <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-brand">
@@ -31,9 +30,7 @@
     </nav>
 
     <div class="container">
-        <!-- Main Content -->
         <main class="main-content">
-            <!-- Course Information Panel -->
             <div class="course-info-panel">
                 <div class="course-header">
                     <h2 class="course-title">CSA47 - Deep Learning</h2>
@@ -49,34 +46,27 @@
                         <span class="stat-label">Selected SET</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number">50</span>
+                        <span class="stat-number" id="max-questions-limit"></span>
                         <span class="stat-label">MAX Questions Limit</span>
                     </div>
                 </div>
             </div>
 
-            <!-- CO Selection -->
             <div class="co-selector-panel">
                 <div class="selector-header">
-                    <h3 class="selector-title">Course SET Selection</h3>
+                    <h3 class="selector-title">SET Selection</h3>
                     <p class="selector-description">Choose the SET you want to practice</p>
                 </div>
                 <div class="co-selector-container">
                     <label for="co-select" class="co-label">Select SET</label>
                     <div class="select-wrapper">
                         <select id="co-select" class="co-select">
-                            <option value="CO1" selected>CO1</option>
-                            <option value="CO2">CO2</option>
-                            <option value="CO3">CO3</option>
-                            <option value="CO4">CO4</option>
-                            <option value="CO5">CO5</option>
                         </select>
                         <div class="select-arrow">▼</div>
                     </div>
                 </div>
             </div>
 
-            <!-- Loading State -->
             <div id="loading" class="loading">
                 <div class="loading-content">
                     <div class="loading-spinner"></div>
@@ -85,7 +75,6 @@
                 </div>
             </div>
 
-            <!-- Error State -->
             <div id="error" class="error hidden">
                 <div class="error-content">
                     <div class="error-icon">⚠️</div>
@@ -95,7 +84,6 @@
                 </div>
             </div>
 
-            <!-- Questions Container -->
             <div id="questions-container" class="questions-container hidden">
                 <div class="questions-header">
                     <div class="questions-title-section">
@@ -105,7 +93,7 @@
                             <a href="quiz.html" class="difficulty-indicator" style="cursor:pointer; text-decoration:none; display:inline-block;">
                                 Start Quiz
                             </a>
-                            
+
                         </div>
                     </div>
                     <div class="assessment-instructions">
@@ -123,19 +111,14 @@
         </main>
     </div>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            
+
             <div class="footer-section">
-                
+
                 <p>Designed by <a href="https://www.jayanth.site" target="_blank" rel="noopener noreferrer">Donavalli Jayanth</a></p>
             </div>
-            <!-- <div class="footer-section">
-                <h4>Version</h4>
-                <p>EduAssess v2.0 - Academic Edition</p>
-            </div> -->
-        </div>
+            </div>
         <div class="footer-bottom">
             <p>&copy; Deep Learning</p>
         </div>
